@@ -1,0 +1,164 @@
+{
+  "blades": [
+    {
+      "name": "Shadow Shinobi",
+      "stats": {
+        "attack": 7,
+        "defense": 6,
+        "stamina": 6,
+        "weight": 7,
+        "type": "Balance"
+      }
+    },
+    {
+      "name": "Wand Wizard",
+      "stats": {
+        "attack": 5,
+        "defense": 7,
+        "stamina": 8,
+        "weight": 6,
+        "type": "Stamina"
+      }
+    },
+    {
+      "name": "Hammer Incendio",
+      "stats": {
+        "attack": 7,
+        "defense": 6,
+        "stamina": 6,
+        "weight": 8,
+        "type": "Balance"
+      }
+    },
+    {
+      "name": "Wand Wizard",
+      "stats": {
+        "attack": 5,
+        "defense": 7,
+        "stamina": 8,
+        "weight": 6,
+        "type": "Stamina"
+      }
+    },
+    {
+      "name": "Roar Tyranno",
+      "stats": {
+        "attack": 8,
+        "defense": 4,
+        "stamina": 5,
+        "weight": 8,
+        "type": "Attack"
+      }
+    }
+  ],
+  "ratchets": [
+    {
+      "name": "1-60",
+      "stats": {
+        "attack": 5,
+        "defense": 6,
+        "stamina": 7,
+        "weight": 4,
+        "burst_resistance": 8
+      }
+    },
+    {
+      "name": "1-80",
+      "stats": {
+        "attack": 4,
+        "defense": 8,
+        "stamina": 6,
+        "weight": 6,
+        "burst_resistance": 7
+      }
+    },
+    {
+      "name": "3-70",
+      "stats": {
+        "attack": 7,
+        "defense": 6,
+        "stamina": 6,
+        "weight": 5,
+        "burst_resistance": 7
+      }
+    },
+    {
+      "name": "5-70",
+      "stats": {
+        "attack": 6,
+        "defense": 7,
+        "stamina": 7,
+        "weight": 6,
+        "burst_resistance": 7
+      }
+    },
+    {
+      "name": "9-60",
+      "stats": {
+        "attack": 5,
+        "defense": 6,
+        "stamina": 8,
+        "weight": 6,
+        "burst_resistance": 8
+      }
+    }
+  ],
+  "bits": [
+    {
+      "name": "Gear Flat (GF)",
+      "stats": {
+        "attack": 9,
+        "defense": 3,
+        "stamina": 5,
+        "weight": 5,
+        "burst_resistance": 7,
+        "type": "Attack"
+      }
+    },
+    {
+      "name": "Metal Needle (MN)",
+      "stats": {
+        "attack": 3,
+        "defense": 8,
+        "stamina": 8,
+        "weight": 7,
+        "burst_resistance": 5,
+        "type": "Defense"
+      }
+    },
+    {
+      "name": "Rush (R)",
+      "stats": {
+        "attack": 8,
+        "defense": 3,
+        "stamina": 6,
+        "weight": 4,
+        "burst_resistance": 7,
+        "type": "Attack"
+      }
+    },
+    {
+      "name": "High Needle (HN)",
+      "stats": {
+        "attack": 2,
+        "defense": 8,
+        "stamina": 9,
+        "weight": 5,
+        "burst_resistance": 4,
+        "type": "Defense"
+      }
+    },
+    {
+      "name": "Disk Ball (DB)",
+      "stats": {
+        "attack": 3,
+        "defense": 7,
+        "stamina": 9,
+        "weight": 6,
+        "burst_resistance": 5,
+        "type": "Stamina"
+      }
+    }
+  ],
+  "decks": {}
+}
