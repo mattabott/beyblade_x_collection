@@ -1,0 +1,1031 @@
+{
+  "blades": {
+    "Sword Dran": {
+      "attack": 8,
+      "defense": 4,
+      "stamina": 5,
+      "weight": 7,
+      "type": "Attack",
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/5/5f/BladeDranSword.png"
+    },
+    "Dran Sword": {
+      "attack": 8,
+      "defense": 4,
+      "stamina": 5,
+      "weight": 7,
+      "type": "Attack",
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/5/5f/BladeDranSword.png"
+    },
+    "Helm Knight": {
+      "attack": 4,
+      "defense": 8,
+      "stamina": 6,
+      "weight": 8,
+      "type": "Defense",
+      "image_url": null
+    },
+    "Arrow Wizard": {
+      "attack": 5,
+      "defense": 6,
+      "stamina": 8,
+      "weight": 6,
+      "type": "Stamina",
+      "image_url": null
+    },
+    "Wizard Arrow": {
+      "attack": 5,
+      "defense": 6,
+      "stamina": 8,
+      "weight": 6,
+      "type": "Stamina",
+      "image_url": null
+    },
+    "Scythe Incendio": {
+      "attack": 6,
+      "defense": 6,
+      "stamina": 7,
+      "weight": 7,
+      "type": "Balance",
+      "image_url": null
+    },
+    "Lance Knight": {
+      "attack": 7,
+      "defense": 7,
+      "stamina": 6,
+      "weight": 8,
+      "type": "Balance",
+      "image_url": null
+    },
+    "Claw Leon": {
+      "attack": 8,
+      "defense": 4,
+      "stamina": 5,
+      "weight": 7,
+      "type": "Attack",
+      "image_url": null
+    },
+    "Leon Claw": {
+      "attack": 8,
+      "defense": 4,
+      "stamina": 5,
+      "weight": 7,
+      "type": "Attack",
+      "image_url": null
+    },
+    "Buster Dran": {
+      "attack": 7,
+      "defense": 5,
+      "stamina": 6,
+      "weight": 7,
+      "type": "Attack",
+      "image_url": null
+    },
+    "Dran Buster": {
+      "attack": 7,
+      "defense": 5,
+      "stamina": 6,
+      "weight": 7,
+      "type": "Attack",
+      "image_url": null
+    },
+    "Wand Wizard": {
+      "attack": 5,
+      "defense": 7,
+      "stamina": 8,
+      "weight": 6,
+      "type": "Stamina",
+      "image_url": null
+    },
+    "Wizard Wand": {
+      "attack": 5,
+      "defense": 7,
+      "stamina": 8,
+      "weight": 6,
+      "type": "Stamina",
+      "image_url": null
+    },
+    "Shadow Shinobi": {
+      "attack": 7,
+      "defense": 6,
+      "stamina": 6,
+      "weight": 7,
+      "type": "Balance",
+      "image_url": null
+    },
+    "Knife Shinobi": {
+      "attack": 7,
+      "defense": 6,
+      "stamina": 6,
+      "weight": 7,
+      "type": "Balance",
+      "image_url": null
+    },
+    "Scarlet Garuda": {
+      "attack": 6,
+      "defense": 5,
+      "stamina": 7,
+      "weight": 6,
+      "type": "Balance",
+      "image_url": null
+    },
+    "Sterling Wolf": {
+      "attack": 4,
+      "defense": 8,
+      "stamina": 7,
+      "weight": 7,
+      "type": "Defense",
+      "image_url": null
+    },
+    "Silver Wolf": {
+      "attack": 4,
+      "defense": 8,
+      "stamina": 7,
+      "weight": 7,
+      "type": "Defense",
+      "image_url": null
+    },
+    "Hammer Incendio": {
+      "attack": 7,
+      "defense": 6,
+      "stamina": 6,
+      "weight": 8,
+      "type": "Balance",
+      "image_url": null
+    },
+    "Courage Dran": {
+      "attack": 7,
+      "defense": 5,
+      "stamina": 6,
+      "weight": 7,
+      "type": "Attack",
+      "image_url": null
+    },
+    "Reaper Incendio": {
+      "attack": 8,
+      "defense": 4,
+      "stamina": 5,
+      "weight": 7,
+      "type": "Attack",
+      "image_url": null
+    },
+    "Arc Wizard": {
+      "attack": 5,
+      "defense": 6,
+      "stamina": 8,
+      "weight": 6,
+      "type": "Stamina",
+      "image_url": null
+    },
+    "Dark Perseus": {
+      "attack": 6,
+      "defense": 7,
+      "stamina": 6,
+      "weight": 7,
+      "type": "Balance",
+      "image_url": null
+    },
+    "Steel Samurai": {
+      "attack": 7,
+      "defense": 6,
+      "stamina": 6,
+      "weight": 8,
+      "type": "Balance",
+      "image_url": null
+    },
+    "Horn Rhino": {
+      "attack": 5,
+      "defense": 8,
+      "stamina": 6,
+      "weight": 8,
+      "type": "Defense",
+      "image_url": null
+    },
+    "Rhino Horn": {
+      "attack": 5,
+      "defense": 8,
+      "stamina": 6,
+      "weight": 8,
+      "type": "Defense",
+      "image_url": null
+    },
+    "Keel Shark": {
+      "attack": 8,
+      "defense": 3,
+      "stamina": 5,
+      "weight": 7,
+      "type": "Attack",
+      "image_url": null
+    },
+    "Shark Keel": {
+      "attack": 8,
+      "defense": 3,
+      "stamina": 5,
+      "weight": 7,
+      "type": "Attack",
+      "image_url": null
+    },
+    "Talon Ptera": {
+      "attack": 6,
+      "defense": 6,
+      "stamina": 7,
+      "weight": 6,
+      "type": "Stamina",
+      "image_url": null
+    },
+    "Ptera Talon": {
+      "attack": 6,
+      "defense": 6,
+      "stamina": 7,
+      "weight": 6,
+      "type": "Stamina",
+      "image_url": null
+    },
+    "Sting Unicorn": {
+      "attack": 6,
+      "defense": 7,
+      "stamina": 7,
+      "weight": 7,
+      "type": "Balance",
+      "image_url": null
+    },
+    "Unicorn Sting": {
+      "attack": 6,
+      "defense": 7,
+      "stamina": 7,
+      "weight": 7,
+      "type": "Balance",
+      "image_url": null
+    },
+    "Roar Tyranno": {
+      "attack": 8,
+      "defense": 4,
+      "stamina": 5,
+      "weight": 8,
+      "type": "Attack",
+      "image_url": null
+    },
+    "Tyranno Roar": {
+      "attack": 8,
+      "defense": 4,
+      "stamina": 5,
+      "weight": 8,
+      "type": "Attack",
+      "image_url": null
+    },
+    "Savage Bear": {
+      "attack": 7,
+      "defense": 6,
+      "stamina": 6,
+      "weight": 8,
+      "type": "Balance",
+      "image_url": null
+    },
+    "Bear Savage": {
+      "attack": 7,
+      "defense": 6,
+      "stamina": 6,
+      "weight": 8,
+      "type": "Balance",
+      "image_url": null
+    },
+    "Cowl Sphinx": {
+      "attack": 5,
+      "defense": 7,
+      "stamina": 7,
+      "weight": 7,
+      "type": "Defense",
+      "image_url": null
+    },
+    "Sphinx Cowl": {
+      "attack": 5,
+      "defense": 7,
+      "stamina": 7,
+      "weight": 7,
+      "type": "Defense",
+      "image_url": null
+    },
+    "Obsidian Shell": {
+      "attack": 4,
+      "defense": 9,
+      "stamina": 6,
+      "weight": 8,
+      "type": "Defense",
+      "image_url": null
+    },
+    "Shell Obsidian": {
+      "attack": 4,
+      "defense": 9,
+      "stamina": 6,
+      "weight": 8,
+      "type": "Defense",
+      "image_url": null
+    },
+    "Tide Whale": {
+      "attack": 5,
+      "defense": 7,
+      "stamina": 8,
+      "weight": 7,
+      "type": "Stamina",
+      "image_url": null
+    },
+    "Whale Tide": {
+      "attack": 5,
+      "defense": 7,
+      "stamina": 8,
+      "weight": 7,
+      "type": "Stamina",
+      "image_url": null
+    },
+    "Dagger Dran": {
+      "attack": 8,
+      "defense": 4,
+      "stamina": 5,
+      "weight": 7,
+      "type": "Attack",
+      "image_url": null
+    },
+    "Dran Dagger": {
+      "attack": 8,
+      "defense": 4,
+      "stamina": 5,
+      "weight": 7,
+      "type": "Attack",
+      "image_url": null
+    },
+    "Yell Kong": {
+      "attack": 7,
+      "defense": 6,
+      "stamina": 6,
+      "weight": 8,
+      "type": "Balance",
+      "image_url": null
+    },
+    "Kong Yell": {
+      "attack": 7,
+      "defense": 6,
+      "stamina": 6,
+      "weight": 8,
+      "type": "Balance",
+      "image_url": null
+    },
+    "Soar Phoenix": {
+      "attack": 7,
+      "defense": 5,
+      "stamina": 7,
+      "weight": 7,
+      "type": "Balance",
+      "image_url": null
+    },
+    "Phoenix Soar": {
+      "attack": 7,
+      "defense": 5,
+      "stamina": 7,
+      "weight": 7,
+      "type": "Balance",
+      "image_url": null
+    },
+    "Chain Incendio": {
+      "attack": 7,
+      "defense": 7,
+      "stamina": 6,
+      "weight": 7,
+      "type": "Balance",
+      "image_url": null
+    },
+    "Hells Chain": {
+      "attack": 7,
+      "defense": 7,
+      "stamina": 6,
+      "weight": 7,
+      "type": "Balance",
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/8/88/BladeHellsChain.png"
+    },
+    "Tail Viper": {
+      "attack": 7,
+      "defense": 5,
+      "stamina": 6,
+      "weight": 6,
+      "type": "Attack",
+      "image_url": null
+    },
+    "Viper Tail": {
+      "attack": 7,
+      "defense": 5,
+      "stamina": 6,
+      "weight": 6,
+      "type": "Attack",
+      "image_url": null
+    },
+    "Bite Croc": {
+      "attack": 8,
+      "defense": 4,
+      "stamina": 5,
+      "weight": 7,
+      "type": "Attack",
+      "image_url": null
+    },
+    "Croc Bite": {
+      "attack": 8,
+      "defense": 4,
+      "stamina": 5,
+      "weight": 7,
+      "type": "Attack",
+      "image_url": null
+    },
+    "Gale Wyvern": {
+      "attack": 6,
+      "defense": 6,
+      "stamina": 7,
+      "weight": 6,
+      "type": "Stamina",
+      "image_url": null
+    },
+    "Wyvern Gale": {
+      "attack": 6,
+      "defense": 6,
+      "stamina": 7,
+      "weight": 6,
+      "type": "Stamina",
+      "image_url": null
+    },
+    "Beat Tyranno": {
+      "attack": 8,
+      "defense": 4,
+      "stamina": 5,
+      "weight": 8,
+      "type": "Attack",
+      "image_url": null
+    },
+    "Tyranno Beat": {
+      "attack": 8,
+      "defense": 4,
+      "stamina": 5,
+      "weight": 8,
+      "type": "Attack",
+      "image_url": null
+    },
+    "Crest Leon": {
+      "attack": 8,
+      "defense": 4,
+      "stamina": 5,
+      "weight": 7,
+      "type": "Attack",
+      "image_url": null
+    },
+    "Pearl Tiger": {
+      "attack": 7,
+      "defense": 5,
+      "stamina": 6,
+      "weight": 7,
+      "type": "Attack",
+      "image_url": null
+    },
+    "Tiger Pearl": {
+      "attack": 7,
+      "defense": 5,
+      "stamina": 6,
+      "weight": 7,
+      "type": "Attack",
+      "image_url": null
+    },
+    "Gill Shark": {
+      "attack": 8,
+      "defense": 3,
+      "stamina": 5,
+      "weight": 7,
+      "type": "Attack",
+      "image_url": null
+    },
+    "Shark Gill": {
+      "attack": 8,
+      "defense": 3,
+      "stamina": 5,
+      "weight": 7,
+      "type": "Attack",
+      "image_url": null
+    },
+    "Hells Scythe": {
+      "attack": 6,
+      "defense": 5,
+      "stamina": 9,
+      "weight": 6,
+      "type": "Stamina",
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/b/b6/BladeHellsScythe.png"
+    },
+    "Phoenix Wing": {
+      "attack": 9,
+      "defense": 3,
+      "stamina": 4,
+      "weight": 9,
+      "type": "Attack",
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/2/2d/BladePhoenixWing.png"
+    },
+    "Shark Edge": {
+      "attack": 9,
+      "defense": 3,
+      "stamina": 4,
+      "weight": 7,
+      "type": "Attack",
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/2/2e/BladeSharkEdge.png"
+    },
+    "Knight Shield": {
+      "attack": 3,
+      "defense": 9,
+      "stamina": 6,
+      "weight": 8,
+      "type": "Defense",
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/d/d0/BladeKnightShield.png"
+    },
+    "Wizard Rod": {
+      "attack": 4,
+      "defense": 7,
+      "stamina": 9,
+      "weight": 6,
+      "type": "Stamina",
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/f/f4/BladeWizardRod.png"
+    },
+    "Cobalt Drake": {
+      "attack": 7,
+      "defense": 6,
+      "stamina": 7,
+      "weight": 9,
+      "type": "Balance",
+      "image_url": null
+    },
+    "Aero Pegasus": {
+      "attack": 7,
+      "defense": 5,
+      "stamina": 7,
+      "weight": 7,
+      "type": "Balance",
+      "image_url": null
+    }
+  },
+  "ratchets": {
+    "1-60": {
+      "attack": 5,
+      "defense": 6,
+      "stamina": 7,
+      "weight": 4,
+      "burst_resistance": 8,
+      "image_url": null
+    },
+    "1-70": {
+      "attack": 5,
+      "defense": 7,
+      "stamina": 7,
+      "weight": 5,
+      "burst_resistance": 7,
+      "image_url": null
+    },
+    "1-80": {
+      "attack": 4,
+      "defense": 8,
+      "stamina": 6,
+      "weight": 6,
+      "burst_resistance": 7,
+      "image_url": null
+    },
+    "2-60": {
+      "attack": 6,
+      "defense": 6,
+      "stamina": 7,
+      "weight": 4,
+      "burst_resistance": 7,
+      "image_url": null
+    },
+    "2-80": {
+      "attack": 5,
+      "defense": 7,
+      "stamina": 6,
+      "weight": 6,
+      "burst_resistance": 7,
+      "image_url": null
+    },
+    "3-60": {
+      "attack": 7,
+      "defense": 6,
+      "stamina": 6,
+      "weight": 5,
+      "burst_resistance": 7,
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/c/c7/Ratchet3-60.png"
+    },
+    "3-70": {
+      "attack": 7,
+      "defense": 6,
+      "stamina": 6,
+      "weight": 5,
+      "burst_resistance": 7,
+      "image_url": null
+    },
+    "3-80": {
+      "attack": 5,
+      "defense": 7,
+      "stamina": 6,
+      "weight": 6,
+      "burst_resistance": 7,
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/4/4c/Ratchet3-80.png"
+    },
+    "4-60": {
+      "attack": 7,
+      "defense": 6,
+      "stamina": 6,
+      "weight": 5,
+      "burst_resistance": 6,
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/5/5e/Ratchet4-60.png"
+    },
+    "4-70": {
+      "attack": 6,
+      "defense": 7,
+      "stamina": 6,
+      "weight": 6,
+      "burst_resistance": 6,
+      "image_url": null
+    },
+    "4-80": {
+      "attack": 6,
+      "defense": 7,
+      "stamina": 6,
+      "weight": 6,
+      "burst_resistance": 6,
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/7/77/Ratchet4-80.png"
+    },
+    "5-60": {
+      "attack": 6,
+      "defense": 6,
+      "stamina": 7,
+      "weight": 5,
+      "burst_resistance": 7,
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/b/bb/Ratchet5-60.png"
+    },
+    "5-70": {
+      "attack": 6,
+      "defense": 7,
+      "stamina": 7,
+      "weight": 6,
+      "burst_resistance": 7,
+      "image_url": null
+    },
+    "5-80": {
+      "attack": 5,
+      "defense": 8,
+      "stamina": 6,
+      "weight": 7,
+      "burst_resistance": 7,
+      "image_url": null
+    },
+    "6-60": {
+      "attack": 6,
+      "defense": 6,
+      "stamina": 7,
+      "weight": 5,
+      "burst_resistance": 7,
+      "image_url": null
+    },
+    "6-70": {
+      "attack": 5,
+      "defense": 7,
+      "stamina": 6,
+      "weight": 6,
+      "burst_resistance": 7,
+      "image_url": null
+    },
+    "6-80": {
+      "attack": 5,
+      "defense": 8,
+      "stamina": 6,
+      "weight": 7,
+      "burst_resistance": 7,
+      "image_url": null
+    },
+    "7-70": {
+      "attack": 5,
+      "defense": 7,
+      "stamina": 7,
+      "weight": 6,
+      "burst_resistance": 7,
+      "image_url": null
+    },
+    "7-80": {
+      "attack": 5,
+      "defense": 7,
+      "stamina": 7,
+      "weight": 7,
+      "burst_resistance": 7,
+      "image_url": null
+    },
+    "9-60": {
+      "attack": 5,
+      "defense": 6,
+      "stamina": 8,
+      "weight": 6,
+      "burst_resistance": 8,
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/4/4f/Ratchet9-60.png"
+    },
+    "9-80": {
+      "attack": 4,
+      "defense": 7,
+      "stamina": 7,
+      "weight": 7,
+      "burst_resistance": 8,
+      "image_url": null
+    },
+    "M-85": {
+      "attack": 4,
+      "defense": 8,
+      "stamina": 6,
+      "weight": 9,
+      "burst_resistance": 7,
+      "image_url": null
+    },
+    "4-55": {
+      "attack": 7,
+      "defense": 6,
+      "stamina": 6,
+      "weight": 4,
+      "burst_resistance": 6,
+      "image_url": null
+    }
+  },
+  "bits": {
+    "Flat (F)": {
+      "attack": 9,
+      "defense": 3,
+      "stamina": 4,
+      "weight": 4,
+      "burst_resistance": 7,
+      "type": "Attack",
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/1/1f/BitFlat.png"
+    },
+    "Ball (B)": {
+      "attack": 2,
+      "defense": 7,
+      "stamina": 9,
+      "weight": 5,
+      "burst_resistance": 5,
+      "type": "Stamina",
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/a/a5/BitBall.png"
+    },
+    "Needle (N)": {
+      "attack": 3,
+      "defense": 7,
+      "stamina": 8,
+      "weight": 5,
+      "burst_resistance": 5,
+      "type": "Stamina",
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/f/f5/BitNeedle.png"
+    },
+    "Taper (T)": {
+      "attack": 6,
+      "defense": 5,
+      "stamina": 7,
+      "weight": 4,
+      "burst_resistance": 6,
+      "type": "Balance",
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/6/60/BitTaper.png"
+    },
+    "Point (P)": {
+      "attack": 7,
+      "defense": 4,
+      "stamina": 6,
+      "weight": 4,
+      "burst_resistance": 6,
+      "type": "Attack",
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/8/8d/BitPoint.png"
+    },
+    "Rush (R)": {
+      "attack": 8,
+      "defense": 3,
+      "stamina": 6,
+      "weight": 4,
+      "burst_resistance": 7,
+      "type": "Attack",
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/0/0f/BitRush.png"
+    },
+    "Low Flat (LF)": {
+      "attack": 10,
+      "defense": 2,
+      "stamina": 3,
+      "weight": 4,
+      "burst_resistance": 8,
+      "type": "Attack",
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/3/32/BitLowFlat.png"
+    },
+    "High Needle (HN)": {
+      "attack": 2,
+      "defense": 8,
+      "stamina": 9,
+      "weight": 5,
+      "burst_resistance": 4,
+      "type": "Defense",
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/7/78/BitHighNeedle.png"
+    },
+    "Orb (O)": {
+      "attack": 3,
+      "defense": 6,
+      "stamina": 9,
+      "weight": 5,
+      "burst_resistance": 5,
+      "type": "Stamina",
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/7/7d/BitOrb.png"
+    },
+    "Spike (S)": {
+      "attack": 4,
+      "defense": 5,
+      "stamina": 8,
+      "weight": 4,
+      "burst_resistance": 5,
+      "type": "Stamina",
+      "image_url": null
+    },
+    "Gear Flat (GF)": {
+      "attack": 9,
+      "defense": 3,
+      "stamina": 5,
+      "weight": 5,
+      "burst_resistance": 7,
+      "type": "Attack",
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/e/ef/BitGearFlat.png"
+    },
+    "Gear Ball (GB)": {
+      "attack": 3,
+      "defense": 7,
+      "stamina": 8,
+      "weight": 6,
+      "burst_resistance": 5,
+      "type": "Stamina",
+      "image_url": null
+    },
+    "Gear Needle (GN)": {
+      "attack": 3,
+      "defense": 7,
+      "stamina": 8,
+      "weight": 6,
+      "burst_resistance": 5,
+      "type": "Stamina",
+      "image_url": null
+    },
+    "Gear Point (GP)": {
+      "attack": 7,
+      "defense": 4,
+      "stamina": 6,
+      "weight": 5,
+      "burst_resistance": 6,
+      "type": "Attack",
+      "image_url": null
+    },
+    "High Taper (HT)": {
+      "attack": 5,
+      "defense": 6,
+      "stamina": 7,
+      "weight": 4,
+      "burst_resistance": 5,
+      "type": "Balance",
+      "image_url": null
+    },
+    "Elevate (E)": {
+      "attack": 4,
+      "defense": 6,
+      "stamina": 8,
+      "weight": 5,
+      "burst_resistance": 5,
+      "type": "Stamina",
+      "image_url": null
+    },
+    "Unite (U)": {
+      "attack": 6,
+      "defense": 5,
+      "stamina": 7,
+      "weight": 5,
+      "burst_resistance": 6,
+      "type": "Balance",
+      "image_url": null
+    },
+    "Quake (Q)": {
+      "attack": 7,
+      "defense": 4,
+      "stamina": 5,
+      "weight": 5,
+      "burst_resistance": 6,
+      "type": "Attack",
+      "image_url": null
+    },
+    "Cyclone (C)": {
+      "attack": 5,
+      "defense": 5,
+      "stamina": 7,
+      "weight": 5,
+      "burst_resistance": 5,
+      "type": "Balance",
+      "image_url": null
+    },
+    "Dot (D)": {
+      "attack": 3,
+      "defense": 7,
+      "stamina": 8,
+      "weight": 5,
+      "burst_resistance": 5,
+      "type": "Defense",
+      "image_url": null
+    },
+    "Disk Ball (DB)": {
+      "attack": 3,
+      "defense": 7,
+      "stamina": 9,
+      "weight": 6,
+      "burst_resistance": 5,
+      "type": "Stamina",
+      "image_url": null
+    },
+    "Accel (A)": {
+      "attack": 8,
+      "defense": 3,
+      "stamina": 5,
+      "weight": 4,
+      "burst_resistance": 7,
+      "type": "Attack",
+      "image_url": null
+    },
+    "Metal Needle (MN)": {
+      "attack": 3,
+      "defense": 8,
+      "stamina": 8,
+      "weight": 7,
+      "burst_resistance": 5,
+      "type": "Defense",
+      "image_url": null
+    },
+    "Trans Point (TP)": {
+      "attack": 7,
+      "defense": 5,
+      "stamina": 6,
+      "weight": 5,
+      "burst_resistance": 6,
+      "type": "Balance",
+      "image_url": null
+    },
+    "Free Ball (FB)": {
+      "attack": 3,
+      "defense": 7,
+      "stamina": 9,
+      "weight": 5,
+      "burst_resistance": 5,
+      "type": "Stamina",
+      "image_url": null
+    },
+    "Hexa (H)": {
+      "attack": 5,
+      "defense": 6,
+      "stamina": 7,
+      "weight": 5,
+      "burst_resistance": 6,
+      "type": "Balance",
+      "image_url": null
+    },
+    "Glide (G)": {
+      "attack": 4,
+      "defense": 6,
+      "stamina": 8,
+      "weight": 5,
+      "burst_resistance": 5,
+      "type": "Stamina",
+      "image_url": null
+    },
+    "Low Orb (LO)": {
+      "attack": 3,
+      "defense": 6,
+      "stamina": 9,
+      "weight": 5,
+      "burst_resistance": 5,
+      "type": "Stamina",
+      "image_url": null
+    },
+    "Vortex (V)": {
+      "attack": 6,
+      "defense": 5,
+      "stamina": 7,
+      "weight": 5,
+      "burst_resistance": 6,
+      "type": "Balance",
+      "image_url": null
+    },
+    "Kick (K)": {
+      "attack": 8,
+      "defense": 3,
+      "stamina": 5,
+      "weight": 4,
+      "burst_resistance": 7,
+      "type": "Attack",
+      "image_url": null
+    },
+    "Wave (W)": {
+      "attack": 5,
+      "defense": 6,
+      "stamina": 7,
+      "weight": 5,
+      "burst_resistance": 5,
+      "type": "Balance",
+      "image_url": null
+    }
+  }
+}
