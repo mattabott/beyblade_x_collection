@@ -5,7 +5,7 @@ from collections import defaultdict
 from difflib import get_close_matches
 import time
 
-def load_parts_database(filename="beyblade_parts_db.json"):
+def load_parts_database(filename=" beyblade_parts_db.json"):
     """Carica il database delle parti Beyblade X da file JSON"""
     try:
         with open(filename, 'r', encoding='utf-8') as f:
@@ -27,7 +27,7 @@ def load_parts_database(filename="beyblade_parts_db.json"):
 PARTS_DATABASE, NORMALIZED_DB = load_parts_database()
 
 class BeybladeManager:
-    def __init__(self, filename="beyblade_collection.json"):
+    def __init__(self, filename=" beyblade_collection.json"):
         self.filename = filename
         self.collection = self.load_collection()
         self.decks = self.collection.get("decks", {})
@@ -337,7 +337,7 @@ class BeybladeManager:
 
         print(f"\n⚔️  CONFRONTO: {part1['name']} vs {part2['name']}")
         print("=" * 70)
-        print(f"{'Statistica':<20} | {part1['name']:<15} | {part2['name']:<15} | Differenza")
+        print(f"{ 'Statistica':<20} | {part1['name']:<15} | {part2['name']:<15} | Differenza")
         print("-" * 70)
 
         all_stats = set(stats1.keys()) | set(stats2.keys())
@@ -433,9 +433,9 @@ class BeybladeManager:
             return
 
         self.decks[deck_name] = {
-            "beyblade1": {"blade": None, "ratchet": None, "bit": None},
-            "beyblade2": {"blade": None, "ratchet": None, "bit": None},
-            "beyblade3": {"blade": None, "ratchet": None, "bit": None}
+            " beyblade1": {"blade": None, "ratchet": None, "bit": None},
+            " beyblade2": {"blade": None, "ratchet": None, "bit": None},
+            " beyblade3": {"blade": None, "ratchet": None, "bit": None}
         }
         self._mark_dirty()
         self.save_collection(force=True)
@@ -447,7 +447,7 @@ class BeybladeManager:
             print(f"❌ Il deck '{deck_name}' non esiste!")
             return
 
-        if bey_slot not in ["beyblade1", "beyblade2", "beyblade3"]:
+        if bey_slot not in [" beyblade1", " beyblade2", " beyblade3"]:
             print("❌ Slot non valido! Usa: beyblade1, beyblade2, beyblade3")
             return
 
@@ -532,352 +532,203 @@ class BeybladeManager:
         print(f"✅ Deck '{deck_name}' eliminato!")
 
 
-def print_menu():
-    """Stampa il menu principale"""
+def print_main_menu():
+    """Stampa il menu principale numerico."""
     print("\n" + "="*70)
     print("🎯 BEYBLADE X COLLECTION MANAGER")
     print("="*70)
-    print("1  - Aggiungi parte")
-    print("2  - Rimuovi parte")
-    print("3  - Mostra collezione")
-    print("4  - Confronta due parti")
-    print("5  - Classifica parti per statistica")
-    print("6  - Suggerisci combo ottimale")
-    print("7  - Gestione deck")
-    print("8  - Mostra database parti disponibili")
-    print("9  - Aggiunta veloce parti")
-    print("10 - Rimozione veloce parti")
-    print("11 - Ripara statistiche mancanti")
-    print("12 - Ripristina da backup")
-    print("0  - Esci")
+    print("1 - Gestione Collezione")
+    print("2 - Analisi Collezione")
+    print("3 - Gestione Deck")
+    print("4 - Utility")
+    print("0 - Esci")
     print("="*70)
 
+def print_collection_menu():
+    """Stampa il sottomenu per la gestione della collezione."""
+    print("\n" + "-"*70)
+    print("📦 Gestione Collezione")
+    print("-"*70)
+    print("1 - Aggiungi Blade")
+    print("2 - Aggiungi Ratchet")
+    print("3 - Aggiungi Bit")
+    print("4 - Rimuovi parte")
+    print("5 - Aggiunta veloce (batch)")
+    print("6 - Rimozione veloce (batch)")
+    print("0 - Torna al menu principale")
+    print("-"*70)
+
+def print_analysis_menu():
+    """Stampa il sottomenu per l'analisi della collezione."""
+    print("\n" + "-"*70)
+    print("📊 Analisi Collezione")
+    print("-"*70)
+    print("1 - Mostra tutte le parti")
+    print("2 - Mostra solo Blades")
+    print("3 - Mostra solo Ratchets")
+    print("4 - Mostra solo Bits")
+    print("5 - Confronta due parti")
+    print("6 - Classifica parti per statistica")
+    print("7 - Suggerisci combo ottimale")
+    print("0 - Torna al menu principale")
+    print("-"*70)
 
 def print_deck_menu():
-    """Stampa il menu deck"""
-    print("\n" + "="*70)
-    print("🎴 GESTIONE DECK")
-    print("="*70)
+    """Stampa il sottomenu per la gestione dei deck."""
+    print("\n" + "-"*70)
+    print("🎴 Gestione Deck")
+    print("-"*70)
     print("1 - Crea nuovo deck")
     print("2 - Aggiungi Beyblade a deck")
     print("3 - Mostra deck")
     print("4 - Lista tutti i deck")
     print("5 - Elimina deck")
     print("0 - Torna al menu principale")
-    print("="*70)
+    print("-"*70)
 
+def print_utility_menu():
+    """Stampa il sottomenu per le utility."""
+    print("\n" + "-"*70)
+    print("🛠️ Utility")
+    print("-"*70)
+    print("1 - Mostra database completo delle parti")
+    print("2 - Ripara statistiche mancanti")
+    print("3 - Ripristina da backup")
+    print("0 - Torna al menu principale")
+    print("-"*70)
 
-def show_available_parts():
-    """Mostra tutte le parti disponibili nel database"""
-    print("\n" + "="*70)
-    print("📚 DATABASE PARTI DISPONIBILI")
-    print("="*70)
-
-    print(f"\n🗡️  BLADES ({len(PARTS_DATABASE['blades'])} parti):")
-    for name in sorted(PARTS_DATABASE["blades"].keys()):
-        stats = PARTS_DATABASE["blades"][name]
-        print(f"  • {name:<25} - Type: {stats.get('type', 'N/A')}")
-
-    print(f"\n⚙️  RATCHETS ({len(PARTS_DATABASE['ratchets'])} parti):")
-    for name in sorted(PARTS_DATABASE["ratchets"].keys()):
-        print(f"  • {name}")
-
-    print(f"\n🔩 BITS ({len(PARTS_DATABASE['bits'])} parti):")
-    for name in sorted(PARTS_DATABASE["bits"].keys()):
-        stats = PARTS_DATABASE["bits"][name]
-        print(f"  • {name:<25} - Type: {stats.get('type', 'N/A')}")
-    print("="*70)
-
-
-def quick_add_parts(manager: BeybladeManager):
-    """Interfaccia veloce per aggiungere più parti"""
-    print("\n🚀 AGGIUNTA VELOCE PARTI")
-    print("Formato: tipo:nome (es. b:Sword Dran, r:1-60, t:Flat)")
-    print("Tipi: b=blade, r=ratchet, t=bit")
-    print("Digita 'done' per terminare, 'list' per vedere il database")
-    print("="*70)
-
-    parts_to_add = []
-    type_map = {'b': 'blades', 'r': 'ratchets', 't': 'bits'}
-
-    while True:
-        user_input = input("Parte: ").strip()
-        if user_input.lower() == 'done':
-            break
-        if user_input.lower() == 'list':
-            show_available_parts()
-            continue
-
-        if ':' not in user_input:
-            print("❌ Formato errato! Usa tipo:nome")
-            continue
-
-        type_abbr, name = user_input.split(':', 1)
-
-        if type_abbr.lower() not in type_map:
-            print("❌ Tipo non valido! Usa b, r, o t")
-            continue
-
-        parts_to_add.append((type_map[type_abbr.lower()], name.strip()))
-
-    if parts_to_add:
-        print(f"\n📦 Aggiunta di {len(parts_to_add)} parti...")
-        manager.batch_add_parts(parts_to_add)
-
-
-def quick_remove_parts(manager: BeybladeManager):
-    """Interfaccia veloce per rimuovere più parti"""
-    print("\n🗑️  RIMOZIONE VELOCE PARTI")
-    print("Formato: tipo:nome (es. b:Sword Dran, r:1-60, t:Flat)")
-    print("Tipi: b=blade, r=ratchet, t=bit")
-    print("Digita 'done' per terminare")
-    print("="*70)
-
-    parts_to_remove = []
-    type_map = {'b': 'blades', 'r': 'ratchets', 't': 'bits'}
-
-    while True:
-        user_input = input("Parte da rimuovere: ").strip()
-        if user_input.lower() == 'done':
-            break
-
-        if ':' not in user_input:
-            print("❌ Formato errato! Usa tipo:nome")
-            continue
-
-        type_abbr, name = user_input.split(':', 1)
-
-        if type_abbr.lower() not in type_map:
-            print("❌ Tipo non valido! Usa b, r, o t")
-            continue
-
-        parts_to_remove.append((type_map[type_abbr.lower()], name.strip()))
-
-    if parts_to_remove:
-        print(f"\n🗑️  Rimozione di {len(parts_to_remove)} parti...")
-        manager.batch_remove_parts(parts_to_remove)
-
-
-def restore_from_backup(manager: BeybladeManager):
-    """Ripristina la collezione dal backup"""
-    backup_file = manager.filename + ".backup"
-
-    if not os.path.exists(backup_file):
-        print("❌ Nessun file di backup trovato!")
-        return
-
-    try:
-        with open(backup_file, 'r', encoding='utf-8') as f:
-            backup_data = json.load(f)
-
-        # Mostra info sul backup
-        blades = len(backup_data.get("blades", []))
-        ratchets = len(backup_data.get("ratchets", []))
-        bits = len(backup_data.get("bits", []))
-
-        print(f"\n📦 Backup trovato con:")
-        print(f"  • {blades} blades")
-        print(f"  • {ratchets} ratchets")
-        print(f"  • {bits} bits")
-
-        confirm = input("\nVuoi ripristinare dal backup? (s/n): ").strip().lower()
-        if confirm == 's':
-            manager.collection = backup_data
-            manager.decks = backup_data.get("decks", {})
-            manager._parts_cache = manager._build_parts_cache()
-            manager._mark_dirty()
-            manager.save_collection(force=True)
-            print("✅ Collezione ripristinata dal backup!")
-        else:
-            print("❌ Ripristino annullato")
-
-    except Exception as e:
-        print(f"❌ Errore nel ripristino: {e}")
-
+def get_part_type_from_choice(choice: str) -> Optional[str]:
+    """Converte la scelta numerica in un tipo di parte."""
+    part_type_map = {"1": "blades", "2": "ratchets", "3": "bits"}
+    return part_type_map.get(choice)
 
 def main():
+    """Funzione principale con la nuova interfaccia numerica a sottomenu."""
     manager = BeybladeManager()
 
     try:
         while True:
-            print_menu()
+            print_main_menu()
             choice = input("\n👉 Scelta: ").strip()
 
-            if choice == "1":
-                print("\nTipo di parte:")
-                print("1 - Blade")
-                print("2 - Ratchet")
-                print("3 - Bit")
-                part_choice = input("Scelta: ").strip()
+            if choice == "1": # Gestione Collezione
+                while True:
+                    print_collection_menu()
+                    sub_choice = input("\n👉 Scelta Collezione: ").strip()
+                    if sub_choice in ["1", "2", "3"]:
+                        part_type = get_part_type_from_choice(sub_choice)
+                        name = input(f"Nome del {part_type[:-1]}: ").strip()
+                        manager.add_part(part_type, name)
+                        manager.save_collection(force=True)
+                    elif sub_choice == "4":
+                        part_type_choice = input("Tipo di parte (1:Blade, 2:Ratchet, 3:Bit): ").strip()
+                        part_type = get_part_type_from_choice(part_type_choice)
+                        if part_type:
+                            name = input(f"Nome del {part_type[:-1]} da rimuovere: ").strip()
+                            manager.remove_part(part_type, name)
+                            manager.save_collection(force=True)
+                        else:
+                            print("❌ Scelta non valida!")
+                    elif sub_choice == "5":
+                        quick_add_parts(manager)
+                    elif sub_choice == "6":
+                        quick_remove_parts(manager)
+                    elif sub_choice == "0":
+                        break
+                    else:
+                        print("❌ Scelta non valida!")
 
-                part_type_map = {"1": "blades", "2": "ratchets", "3": "bits"}
-                part_type = part_type_map.get(part_choice)
+            elif choice == "2": # Analisi Collezione
+                while True:
+                    print_analysis_menu()
+                    sub_choice = input("\n👉 Scelta Analisi: ").strip()
+                    if sub_choice == "1":
+                        manager.list_parts("blades")
+                        manager.list_parts("ratchets")
+                        manager.list_parts("bits")
+                    elif sub_choice == "2":
+                        manager.list_parts("blades")
+                    elif sub_choice == "3":
+                        manager.list_parts("ratchets")
+                    elif sub_choice == "4":
+                        manager.list_parts("bits")
+                    elif sub_choice == "5":
+                        part_type_choice = input("Tipo di parte (1:Blade, 2:Ratchet, 3:Bit): ").strip()
+                        part_type = get_part_type_from_choice(part_type_choice)
+                        if part_type:
+                            name1 = input("Prima parte: ").strip()
+                            name2 = input("Seconda parte: ").strip()
+                            manager.compare_parts(part_type, name1, name2)
+                        else:
+                            print("❌ Scelta non valida!")
+                    elif sub_choice == "6":
+                        part_type_choice = input("Tipo di parte (1:Blade, 2:Ratchet, 3:Bit): ").strip()
+                        part_type = get_part_type_from_choice(part_type_choice)
+                        if part_type:
+                            stat = input("Statistica (es. attack, defense, stamina): ").strip().lower()
+                            manager.rank_parts(part_type, stat)
+                        else:
+                            print("❌ Scelta non valida!")
+                    elif sub_choice == "7":
+                        combo_type = input("Tipo di combo (attack, defense, stamina, balance): ").strip().lower()
+                        manager.suggest_combo(combo_type)
+                    elif sub_choice == "0":
+                        break
+                    else:
+                        print("❌ Scelta non valida!")
 
-                if part_type:
-                    name = input("Nome della parte: ").strip()
-                    manager.add_part(part_type, name)
-                    manager.save_collection(force=True)
-                else:
-                    print("❌ Scelta non valida!")
-
-            elif choice == "2":
-                print("\nTipo di parte:")
-                print("1 - Blade")
-                print("2 - Ratchet")
-                print("3 - Bit")
-                part_choice = input("Scelta: ").strip()
-
-                part_type_map = {"1": "blades", "2": "ratchets", "3": "bits"}
-                part_type = part_type_map.get(part_choice)
-
-                if part_type:
-                    name = input("Nome della parte: ").strip()
-                    manager.remove_part(part_type, name)
-                    manager.save_collection(force=True)
-                else:
-                    print("❌ Scelta non valida!")
-
-            elif choice == "3":
-                print("\n1 - Blades")
-                print("2 - Ratchets")
-                print("3 - Bits")
-                print("4 - Tutto")
-                view_choice = input("Cosa vuoi vedere? ").strip()
-
-                if view_choice == "1":
-                    manager.list_parts("blades")
-                elif view_choice == "2":
-                    manager.list_parts("ratchets")
-                elif view_choice == "3":
-                    manager.list_parts("bits")
-                elif view_choice == "4":
-                    manager.list_parts("blades")
-                    manager.list_parts("ratchets")
-                    manager.list_parts("bits")
-                else:
-                    print("❌ Scelta non valida!")
-
-            elif choice == "4":
-                print("\nTipo di parte:")
-                print("1 - Blade")
-                print("2 - Ratchet")
-                print("3 - Bit")
-                part_choice = input("Scelta: ").strip()
-
-                part_type_map = {"1": "blades", "2": "ratchets", "3": "bits"}
-                part_type = part_type_map.get(part_choice)
-
-                if part_type:
-                    name1 = input("Prima parte: ").strip()
-                    name2 = input("Seconda parte: ").strip()
-                    manager.compare_parts(part_type, name1, name2)
-                else:
-                    print("❌ Scelta non valida!")
-
-            elif choice == "5":
-                print("\nTipo di parte:")
-                print("1 - Blade")
-                print("2 - Ratchet")
-                print("3 - Bit")
-                part_choice = input("Scelta: ").strip()
-
-                part_type_map = {"1": "blades", "2": "ratchets", "3": "bits"}
-                part_type = part_type_map.get(part_choice)
-
-                if part_type:
-                    stat = input("Statistica (attack/defense/stamina/weight): ").strip().lower()
-                    manager.rank_parts(part_type, stat)
-                else:
-                    print("❌ Scelta non valida!")
-
-            elif choice == "6":
-                print("\nTipo di combo:")
-                print("1 - Attack")
-                print("2 - Defense")
-                print("3 - Stamina")
-                print("4 - Balance")
-                combo_choice = input("Scelta: ").strip()
-
-                combo_type_map = {"1": "attack", "2": "defense", "3": "stamina", "4": "balance"}
-                combo_type = combo_type_map.get(combo_choice)
-
-                if combo_type:
-                    manager.suggest_combo(combo_type)
-                else:
-                    print("❌ Scelta non valida!")
-
-            elif choice == "7":
+            elif choice == "3": # Gestione Deck
                 while True:
                     print_deck_menu()
-                    deck_choice = input("\n👉 Scelta: ").strip()
-
-                    if deck_choice == "1":
-                        deck_name = input("Nome del deck: ").strip()
+                    sub_choice = input("\n👉 Scelta Deck: ").strip()
+                    if sub_choice == "1":
+                        deck_name = input("Nome del nuovo deck: ").strip()
                         manager.create_deck(deck_name)
-
-                    elif deck_choice == "2":
+                    elif sub_choice == "2":
                         deck_name = input("Nome del deck: ").strip()
                         if deck_name not in manager.decks:
                             print(f"❌ Il deck '{deck_name}' non esiste!")
                             continue
-
-                        print("\nSlot Beyblade:")
-                        print("1 - Beyblade 1")
-                        print("2 - Beyblade 2")
-                        print("3 - Beyblade 3")
-                        slot_choice = input("Scelta: ").strip()
-
-                        slot_map = {"1": "beyblade1", "2": "beyblade2", "3": "beyblade3"}
-                        slot = slot_map.get(slot_choice)
-
-                        if slot:
-                            blade = input("Blade: ").strip()
-                            ratchet = input("Ratchet: ").strip()
-                            bit = input("Bit: ").strip()
-                            manager.add_to_deck(deck_name, slot, blade, ratchet, bit)
-                        else:
-                            print("❌ Slot non valido!")
-
-                    elif deck_choice == "3":
-                        deck_name = input("Nome del deck: ").strip()
+                        slot = input("Slot ( beyblade1, beyblade2, beyblade3): ").strip()
+                        blade = input("Blade: ").strip()
+                        ratchet = input("Ratchet: ").strip()
+                        bit = input("Bit: ").strip()
+                        manager.add_to_deck(deck_name, slot, blade, ratchet, bit)
+                    elif sub_choice == "3":
+                        deck_name = input("Nome del deck da mostrare: ").strip()
                         manager.show_deck(deck_name)
-
-                    elif deck_choice == "4":
+                    elif sub_choice == "4":
                         manager.list_decks()
-
-                    elif deck_choice == "5":
+                    elif sub_choice == "5":
                         deck_name = input("Nome del deck da eliminare: ").strip()
-                        confirm = input(f"Sei sicuro di voler eliminare '{deck_name}'? (s/n): ").strip().lower()
-                        if confirm == 's':
+                        if input(f"Sei sicuro di voler eliminare '{deck_name}'? (s/n): ").lower() == 's':
                             manager.delete_deck(deck_name)
-
-                    elif deck_choice == "0":
+                    elif sub_choice == "0":
                         break
-
                     else:
                         print("❌ Scelta non valida!")
 
-            elif choice == "8":
-                show_available_parts()
-
-            elif choice == "9":
-                quick_add_parts(manager)
-
-            elif choice == "10":
-                quick_remove_parts(manager)
-
-            elif choice == "11":
-                manager.fix_missing_stats()
-
-            elif choice == "12":
-                restore_from_backup(manager)
+            elif choice == "4": # Utility
+                while True:
+                    print_utility_menu()
+                    sub_choice = input("\n👉 Scelta Utility: ").strip()
+                    if sub_choice == "1":
+                        show_available_parts()
+                    elif sub_choice == "2":
+                        manager.fix_missing_stats()
+                    elif sub_choice == "3":
+                        restore_from_backup(manager)
+                    elif sub_choice == "0":
+                        break
+                    else:
+                        print("❌ Scelta non valida!")
 
             elif choice == "0":
                 print("\n👋 Ciao! Buone battaglie con i tuoi Beyblade!")
                 break
 
             else:
-                print("❌ Scelta non valida!")
+                print("❌ Scelta non valida! Riprova.")
 
     finally:
         manager.save_collection(force=True)
