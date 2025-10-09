@@ -22,7 +22,7 @@
       "stamina": 6,
       "weight": 8,
       "type": "Defense",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/d/d0/BladeKnightShield.png"
     },
     "Arrow Wizard": {
       "attack": 5,
@@ -30,7 +30,7 @@
       "stamina": 8,
       "weight": 6,
       "type": "Stamina",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/d/d7/BladeWizardArrow.png"
     },
     "Wizard Arrow": {
       "attack": 5,
@@ -38,7 +38,7 @@
       "stamina": 8,
       "weight": 6,
       "type": "Stamina",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/d/d7/BladeWizardArrow.png"
     },
     "Scythe Incendio": {
       "attack": 6,
@@ -46,7 +46,7 @@
       "stamina": 7,
       "weight": 7,
       "type": "Balance",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/b/b6/BladeHellsScythe.png"
     },
     "Lance Knight": {
       "attack": 7,
