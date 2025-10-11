@@ -1,7 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("org.jetbrains.kotlin.plugin.serialization") version "1.8.10"
+    id("org.jetbrains.kotlin.plugin.serialization") version "1.9.0"
 }
 
 android {
@@ -32,7 +32,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.4.3"
+        kotlinCompilerExtensionVersion = "1.5.1"
     }
 }
 
@@ -40,7 +40,13 @@ dependencies {
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
     implementation("androidx.activity:activity-compose:1.8.0")
-    implementation(platform("androidx.compose:compose-bom:2023.08.00"))
+
+    // Jetpack Compose Bill of Materials (BOM)
+    val composeBom = platform("androidx.compose:compose-bom:2023.08.00")
+    implementation(composeBom)
+    androidTestImplementation(composeBom)
+
+    // Compose Dependencies
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.ui:ui-tooling-preview")
@@ -48,8 +54,8 @@ dependencies {
     implementation("androidx.navigation:navigation-compose:2.7.5")
 
     // Kotlinx Serialization
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
 
-    // Coil per il caricamento immagini
+    // Coil for image loading
     implementation("io.coil-kt:coil-compose:2.4.0")
 }

@@ -1,0 +1,32 @@
+# Gradle
+.gradle/
+build/
+
+# Caches
+.idea/caches/
+.idea/libraries/
+
+# Local configuration
+local.properties
+
+# Log files
+*.log
+
+# Keystore files
+*.jks
+*.keystore
+
+# APKs
+*.apk
+
+# Android Studio misc
+.idea/workspace.xml
+.idea/gradle.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+captures.PNG
+# Google Services
+google-services.json
+
+# Bundle files
+*.aab
