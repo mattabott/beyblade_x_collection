@@ -11,6 +11,10 @@ void main() {
       ),
     );
 
-    expect(find.text('Beyblade X Manager'), findsOneWidget);
+    // Pump past animation durations used by flutter_animate
+    await tester.pump(const Duration(seconds: 2));
+
+    expect(find.text('BEYBLADE X'), findsOneWidget);
+    expect(find.text('MANAGER'), findsOneWidget);
   });
 }
