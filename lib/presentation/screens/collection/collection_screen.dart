@@ -173,25 +173,88 @@ class _CollectionScreenState extends ConsumerState<CollectionScreen>
         final part = filtered[index];
         final stats = statsMap[part.name];
         if (stats == null) return const SizedBox.shrink();
-        return Dismissible(
-          key: Key('${part.name}_${part.category.name}'),
-          direction: DismissDirection.endToStart,
-          background: Container(
-            alignment: Alignment.centerRight,
-            padding: const EdgeInsets.only(right: 20),
-            color: BeybladeTheme.secondary,
-            child: const Icon(Icons.remove_circle, color: Colors.white),
-          ),
-          onDismissed: (_) => ref
-              .read(collectionProvider.notifier)
-              .removePart(part.name, part.category),
-          child: PartCard(
-            name: part.name,
-            stats: stats,
-            quantity: part.quantity,
-          ),
+        return PartCard(
+          name: part.name,
+          stats: stats,
+          quantity: part.quantity,
+          onLongPress: () => _showPartOptions(context, part),
         );
       },
+    );
+  }
+
+  void _showPartOptions(BuildContext context, CollectedPart part) {
+    showModalBottomSheet(
+      context: context,
+      builder: (ctx) => SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 8),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(16),
+                child: Text(part.name, style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w700)),
+              ),
+              if (part.quantity > 1)
+                ListTile(
+                  leading: const Icon(Icons.remove_circle_outline, color: BeybladeTheme.accent),
+                  title: const Text('Rimuovi uno'),
+                  subtitle: Text('Quantita attuale: ${part.quantity}'),
+                  onTap: () {
+                    ref.read(collectionProvider.notifier).removePart(part.name, part.category);
+                    Navigator.pop(ctx);
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(content: Text('${part.name} ridotto a ${part.quantity - 1}'), backgroundColor: BeybladeTheme.primary),
+                    );
+                  },
+                ),
+              ListTile(
+                leading: const Icon(Icons.delete, color: BeybladeTheme.secondary),
+                title: Text(part.quantity > 1 ? 'Rimuovi tutti' : 'Rimuovi'),
+                onTap: () {
+                  Navigator.pop(ctx);
+                  showDialog(
+                    context: context,
+                    builder: (dlg) => AlertDialog(
+                      title: const Text('Conferma'),
+                      content: Text('Rimuovere ${part.name} dalla collezione?'),
+                      actions: [
+                        TextButton(onPressed: () => Navigator.pop(dlg), child: const Text('Annulla')),
+                        ElevatedButton(
+                          style: ElevatedButton.styleFrom(backgroundColor: BeybladeTheme.secondary),
+                          onPressed: () {
+                            // Remove all quantity
+                            for (var i = 0; i < part.quantity; i++) {
+                              ref.read(collectionProvider.notifier).removePart(part.name, part.category);
+                            }
+                            Navigator.pop(dlg);
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              SnackBar(content: Text('${part.name} rimosso'), backgroundColor: BeybladeTheme.secondary),
+                            );
+                          },
+                          child: const Text('Rimuovi'),
+                        ),
+                      ],
+                    ),
+                  );
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.add_circle_outline, color: Color(0xFF2ECC71)),
+                title: const Text('Aggiungi uno'),
+                onTap: () {
+                  ref.read(collectionProvider.notifier).addPart(part.name, part.category);
+                  Navigator.pop(ctx);
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text('${part.name} ora: ${part.quantity + 1}'), backgroundColor: const Color(0xFF2ECC71)),
+                  );
+                },
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
