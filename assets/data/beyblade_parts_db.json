@@ -95,7 +95,7 @@
       "stamina": 8,
       "weight": 6,
       "type": "Stamina",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/b/bb/Wand_Wizard_5-70DB.jpeg/revision/latest?cb=20241217052811"
     },
     "Wizard Wand": {
       "attack": 5,
@@ -103,7 +103,7 @@
       "stamina": 8,
       "weight": 6,
       "type": "Stamina",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/b/bb/Wand_Wizard_5-70DB.jpeg/revision/latest?cb=20241217052811"
     },
     "Shadow Shinobi": {
       "attack": 7,
@@ -279,7 +279,7 @@
       "stamina": 6,
       "weight": 8,
       "type": "Balance",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/b/b0/BearScratch_5-60F.png/revision/latest?cb=20240913030715"
     },
     "Bear Savage": {
       "attack": 7,
@@ -287,7 +287,7 @@
       "stamina": 6,
       "weight": 8,
       "type": "Balance",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/b/b0/BearScratch_5-60F.png/revision/latest?cb=20240913030715"
     },
     "Cowl Sphinx": {
       "attack": 5,
@@ -359,7 +359,7 @@
       "stamina": 6,
       "weight": 8,
       "type": "Balance",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/0/03/Yell_Kong_3-60GB.jpeg/revision/latest?cb=20241003085621"
     },
     "Kong Yell": {
       "attack": 7,
@@ -367,7 +367,7 @@
       "stamina": 6,
       "weight": 8,
       "type": "Balance",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/0/03/Yell_Kong_3-60GB.jpeg/revision/latest?cb=20241003085621"
     },
     "Soar Phoenix": {
       "attack": 7,
