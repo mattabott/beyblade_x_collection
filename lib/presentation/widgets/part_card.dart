@@ -75,7 +75,7 @@ class PartCard extends StatelessWidget {
         stats.imageUrl!,
         width: 56,
         height: 56,
-        fit: BoxFit.cover,
+        fit: BoxFit.contain,
         headers: const {
           'User-Agent': 'Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36',
         },
