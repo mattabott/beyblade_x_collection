@@ -122,9 +122,9 @@ class _SuggestComboScreenState extends ConsumerState<SuggestComboScreen> {
                             Text('Score: ${combo.score.toStringAsFixed(1)}', style: const TextStyle(fontFamily: 'monospace', fontWeight: FontWeight.bold)),
                           ]),
                           const SizedBox(height: 12),
-                          _comboRow('Blade', combo.blade),
-                          _comboRow('Ratchet', combo.ratchet),
-                          _comboRow('Bit', combo.bit),
+                          _comboRow('Blade', combo.blade, bladeStats),
+                          _comboRow('Ratchet', combo.ratchet, ratchetStats),
+                          _comboRow('Bit', combo.bit, bitStats),
                           if (bladeStats != null && ratchetStats != null && bitStats != null) ...[
                             const Divider(height: 20),
                             for (final stat in ['attack', 'defense', 'stamina'])
@@ -151,13 +151,40 @@ class _SuggestComboScreenState extends ConsumerState<SuggestComboScreen> {
     );
   }
 
-  Widget _comboRow(String label, String value) {
+  Widget _comboRow(String label, String value, dynamic stats) {
     return Padding(
-      padding: const EdgeInsets.only(bottom: 4),
+      padding: const EdgeInsets.only(bottom: 6),
       child: Row(children: [
-        SizedBox(width: 60, child: Text(label, style: const TextStyle(color: BeybladeTheme.textSecondary, fontSize: 13))),
-        Text(value, style: const TextStyle(fontWeight: FontWeight.w600)),
+        SizedBox(width: 52, child: Text(label, style: const TextStyle(color: BeybladeTheme.textSecondary, fontSize: 12))),
+        _partThumbnail(stats, 32),
+        const SizedBox(width: 8),
+        Expanded(child: Text(value, style: const TextStyle(fontWeight: FontWeight.w600))),
       ]),
+    );
+  }
+
+  Widget _partThumbnail(dynamic stats, double size) {
+    final url = stats?.imageUrl as String?;
+    if (url == null || url.isEmpty) {
+      final type = stats?.type as String?;
+      final color = StatUtils.colorForType(type);
+      return Container(
+        width: size, height: size,
+        decoration: BoxDecoration(color: color.withValues(alpha: 0.2), borderRadius: BorderRadius.circular(6)),
+        child: Icon(Icons.catching_pokemon, color: color, size: size * 0.6),
+      );
+    }
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(6),
+      child: Image.network(
+        url, width: size, height: size, fit: BoxFit.contain,
+        headers: const {'User-Agent': 'Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36'},
+        errorBuilder: (_, __, ___) => Container(
+          width: size, height: size,
+          color: Colors.grey.withValues(alpha: 0.2),
+          child: Icon(Icons.catching_pokemon, size: size * 0.6),
+        ),
+      ),
     );
   }
 }
