@@ -110,26 +110,132 @@ class _ComparePartsScreenState extends ConsumerState<ComparePartsScreen> {
                   }).toList(),
                 ),
                 const SizedBox(height: 24),
-                // Detailed stat comparison
-                for (final stat in StatUtils.allStats) ...[
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 4),
-                    child: Text(StatUtils.labelForStat(stat), style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold, color: StatUtils.colorForStat(stat))),
+                // Detailed stat comparison - face-to-face bars
+                Card(
+                  child: Padding(
+                    padding: const EdgeInsets.all(16),
+                    child: Column(
+                      children: [
+                        // Header with part names and images
+                        Row(
+                          children: [
+                            Expanded(child: Row(children: [
+                              _partThumbnail(partsMap[_selectedParts[0]], 32),
+                              const SizedBox(width: 6),
+                              Expanded(child: Text(_selectedParts[0], style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 13), overflow: TextOverflow.ellipsis)),
+                            ])),
+                            const SizedBox(width: 40),
+                            Expanded(child: Row(mainAxisAlignment: MainAxisAlignment.end, children: [
+                              Expanded(child: Text(_selectedParts[1], style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 13), overflow: TextOverflow.ellipsis, textAlign: TextAlign.right)),
+                              const SizedBox(width: 6),
+                              _partThumbnail(partsMap[_selectedParts[1]], 32),
+                            ])),
+                          ],
+                        ),
+                        const SizedBox(height: 16),
+                        // Stat rows
+                        for (final stat in StatUtils.allStats)
+                          _buildCompareRow(
+                            stat,
+                            StatUtils.getStatValue(partsMap[_selectedParts[0]]!, stat),
+                            StatUtils.getStatValue(partsMap[_selectedParts[1]]!, stat),
+                          ),
+                      ],
+                    ),
                   ),
-                  for (final name in _selectedParts)
-                    if (partsMap.containsKey(name))
-                      Padding(
-                        padding: const EdgeInsets.only(left: 8, bottom: 2),
-                        child: StatBar(label: name.length > 6 ? '${name.substring(0, 6)}.' : name, value: StatUtils.getStatValue(partsMap[name]!, stat), color: StatUtils.colorForStat(stat)),
-                      ),
-                  const SizedBox(height: 8),
-                ],
+                ),
               ],
             ],
           );
         },
         loading: () => const Center(child: CircularProgressIndicator()),
         error: (_, __) => const Center(child: Text('Errore')),
+      ),
+    );
+  }
+
+  Widget _buildCompareRow(String stat, int valueA, int valueB) {
+    final color = StatUtils.colorForStat(stat);
+    final label = StatUtils.labelForStat(stat);
+    final aWins = valueA > valueB;
+    final bWins = valueB > valueA;
+    final tie = valueA == valueB;
+
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 10),
+      child: Column(
+        children: [
+          // Stat label centered
+          Text(label, style: TextStyle(fontSize: 12, fontWeight: FontWeight.w700, color: color, letterSpacing: 1)),
+          const SizedBox(height: 4),
+          Row(
+            children: [
+              // Left value
+              SizedBox(
+                width: 28,
+                child: Text(
+                  '$valueA',
+                  textAlign: TextAlign.right,
+                  style: TextStyle(
+                    fontSize: 15,
+                    fontWeight: FontWeight.w800,
+                    fontFamily: 'monospace',
+                    color: aWins ? color : (tie ? Colors.white70 : Colors.white38),
+                  ),
+                ),
+              ),
+              const SizedBox(width: 8),
+              // Left bar (grows right to left)
+              Expanded(
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(4),
+                  child: RotatedBox(
+                    quarterTurns: 2,
+                    child: LinearProgressIndicator(
+                      value: valueA / 10,
+                      minHeight: 10,
+                      backgroundColor: color.withValues(alpha: 0.1),
+                      valueColor: AlwaysStoppedAnimation(aWins ? color : color.withValues(alpha: 0.4)),
+                    ),
+                  ),
+                ),
+              ),
+              // Center divider
+              Container(
+                width: 2, height: 16,
+                margin: const EdgeInsets.symmetric(horizontal: 4),
+                color: Colors.white24,
+              ),
+              // Right bar (grows left to right)
+              Expanded(
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(4),
+                  child: LinearProgressIndicator(
+                    value: valueB / 10,
+                    minHeight: 10,
+                    backgroundColor: color.withValues(alpha: 0.1),
+                    valueColor: AlwaysStoppedAnimation(bWins ? color : color.withValues(alpha: 0.4)),
+                  ),
+                ),
+              ),
+              const SizedBox(width: 8),
+              // Right value
+              SizedBox(
+                width: 28,
+                child: Text(
+                  '$valueB',
+                  textAlign: TextAlign.left,
+                  style: TextStyle(
+                    fontSize: 15,
+                    fontWeight: FontWeight.w800,
+                    fontFamily: 'monospace',
+                    color: bWins ? color : (tie ? Colors.white70 : Colors.white38),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ],
       ),
     );
   }
