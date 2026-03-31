@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:beyblade_x_collection/core/utils/stat_utils.dart';
 import 'package:beyblade_x_collection/data/models/part_stats.dart';
 import 'stat_bar.dart';
@@ -26,26 +25,7 @@ class PartCard extends StatelessWidget {
           padding: const EdgeInsets.all(12),
           child: Row(
             children: [
-              if (stats.imageUrl != null)
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(8),
-                  child: CachedNetworkImage(
-                    imageUrl: stats.imageUrl!,
-                    width: 56, height: 56, fit: BoxFit.cover,
-                    httpHeaders: const {
-                      'User-Agent': 'Mozilla/5.0 (Linux; Android) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36',
-                      'Referer': 'https://beyblade.fandom.com/',
-                    },
-                    placeholder: (_, __) => Container(width: 56, height: 56, color: typeColor.withValues(alpha: 0.2), child: const Center(child: SizedBox(width: 20, height: 20, child: CircularProgressIndicator(strokeWidth: 2)))),
-                    errorWidget: (_, url, error) => Container(width: 56, height: 56, color: typeColor.withValues(alpha: 0.2), child: Icon(Icons.broken_image, color: typeColor, size: 24)),
-                  ),
-                )
-              else
-                Container(
-                  width: 56, height: 56,
-                  decoration: BoxDecoration(color: typeColor.withValues(alpha: 0.2), borderRadius: BorderRadius.circular(8)),
-                  child: Icon(Icons.catching_pokemon, color: typeColor, size: 28),
-                ),
+              _buildImage(typeColor),
               const SizedBox(width: 12),
               Expanded(
                 child: Column(
@@ -76,6 +56,46 @@ class PartCard extends StatelessWidget {
             ],
           ),
         ),
+      ),
+    );
+  }
+
+  Widget _buildImage(Color typeColor) {
+    if (stats.imageUrl == null || stats.imageUrl!.isEmpty) {
+      return Container(
+        width: 56, height: 56,
+        decoration: BoxDecoration(color: typeColor.withValues(alpha: 0.2), borderRadius: BorderRadius.circular(8)),
+        child: Icon(Icons.catching_pokemon, color: typeColor, size: 28),
+      );
+    }
+
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(8),
+      child: Image.network(
+        stats.imageUrl!,
+        width: 56,
+        height: 56,
+        fit: BoxFit.cover,
+        headers: const {
+          'User-Agent': 'Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36',
+        },
+        loadingBuilder: (context, child, loadingProgress) {
+          if (loadingProgress == null) return child;
+          return Container(
+            width: 56, height: 56,
+            color: typeColor.withValues(alpha: 0.2),
+            child: const Center(child: SizedBox(width: 20, height: 20, child: CircularProgressIndicator(strokeWidth: 2))),
+          );
+        },
+        errorBuilder: (context, error, stackTrace) {
+          debugPrint('IMAGE ERROR for $name: $error');
+          debugPrint('URL was: ${stats.imageUrl}');
+          return Container(
+            width: 56, height: 56,
+            decoration: BoxDecoration(color: Colors.red.withValues(alpha: 0.3), borderRadius: BorderRadius.circular(8)),
+            child: const Icon(Icons.broken_image, color: Colors.red, size: 24),
+          );
+        },
       ),
     );
   }
