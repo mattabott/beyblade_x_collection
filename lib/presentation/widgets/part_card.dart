@@ -32,8 +32,12 @@ class PartCard extends StatelessWidget {
                   child: CachedNetworkImage(
                     imageUrl: stats.imageUrl!,
                     width: 56, height: 56, fit: BoxFit.cover,
-                    placeholder: (_, __) => Container(width: 56, height: 56, color: typeColor.withValues(alpha: 0.2), child: Icon(Icons.catching_pokemon, color: typeColor, size: 28)),
-                    errorWidget: (_, __, ___) => Container(width: 56, height: 56, color: typeColor.withValues(alpha: 0.2), child: Icon(Icons.catching_pokemon, color: typeColor, size: 28)),
+                    httpHeaders: const {
+                      'User-Agent': 'Mozilla/5.0 (Linux; Android) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36',
+                      'Referer': 'https://beyblade.fandom.com/',
+                    },
+                    placeholder: (_, __) => Container(width: 56, height: 56, color: typeColor.withValues(alpha: 0.2), child: const Center(child: SizedBox(width: 20, height: 20, child: CircularProgressIndicator(strokeWidth: 2)))),
+                    errorWidget: (_, url, error) => Container(width: 56, height: 56, color: typeColor.withValues(alpha: 0.2), child: Icon(Icons.broken_image, color: typeColor, size: 24)),
                   ),
                 )
               else
