@@ -55,7 +55,7 @@
       "stamina": 6,
       "weight": 8,
       "type": "Balance",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/c/cb/BladeKnightLance.png/revision/latest"
     },
     "Claw Leon": {
       "attack": 8,
@@ -63,7 +63,7 @@
       "stamina": 5,
       "weight": 7,
       "type": "Attack",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/9/93/BladeLeonClaw.png/revision/latest"
     },
     "Leon Claw": {
       "attack": 8,
@@ -71,7 +71,7 @@
       "stamina": 5,
       "weight": 7,
       "type": "Attack",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/9/93/BladeLeonClaw.png/revision/latest"
     },
     "Buster Dran": {
       "attack": 7,
@@ -79,7 +79,7 @@
       "stamina": 6,
       "weight": 7,
       "type": "Attack",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/d/db/BladeDranBuster.png/revision/latest"
     },
     "Dran Buster": {
       "attack": 7,
@@ -87,7 +87,7 @@
       "stamina": 6,
       "weight": 7,
       "type": "Attack",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/d/db/BladeDranBuster.png/revision/latest"
     },
     "Wand Wizard": {
       "attack": 5,
@@ -111,7 +111,7 @@
       "stamina": 6,
       "weight": 7,
       "type": "Balance",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/4/48/BladeShinobiShadow.png/revision/latest"
     },
     "Knife Shinobi": {
       "attack": 7,
@@ -119,7 +119,7 @@
       "stamina": 6,
       "weight": 7,
       "type": "Balance",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/2/25/BladeKnifeShinobi.png/revision/latest"
     },
     "Scarlet Garuda": {
       "attack": 6,
@@ -127,7 +127,7 @@
       "stamina": 7,
       "weight": 6,
       "type": "Balance",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/6/60/BladeCrimsonGaruda.png/revision/latest"
     },
     "Sterling Wolf": {
       "attack": 4,
@@ -135,7 +135,7 @@
       "stamina": 7,
       "weight": 7,
       "type": "Defense",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/f/f1/BladeSilverWolf.png/revision/latest"
     },
     "Silver Wolf": {
       "attack": 4,
@@ -143,7 +143,7 @@
       "stamina": 7,
       "weight": 7,
       "type": "Defense",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/f/f1/BladeSilverWolf.png/revision/latest"
     },
     "Hammer Incendio": {
       "attack": 7,
@@ -151,7 +151,7 @@
       "stamina": 6,
       "weight": 8,
       "type": "Balance",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/6/67/BladeHellsHammer.png/revision/latest"
     },
     "Courage Dran": {
       "attack": 7,
@@ -159,7 +159,7 @@
       "stamina": 6,
       "weight": 7,
       "type": "Attack",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/1/1a/BladeDranBraveS.png/revision/latest"
     },
     "Reaper Incendio": {
       "attack": 8,
@@ -167,7 +167,7 @@
       "stamina": 5,
       "weight": 7,
       "type": "Attack",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/4/4a/BladeHellsReaperT.png/revision/latest"
     },
     "Arc Wizard": {
       "attack": 5,
@@ -175,7 +175,7 @@
       "stamina": 8,
       "weight": 6,
       "type": "Stamina",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/4/46/BladeWizardArcR.png/revision/latest"
     },
     "Dark Perseus": {
       "attack": 6,
@@ -183,7 +183,7 @@
       "stamina": 6,
       "weight": 7,
       "type": "Balance",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/6/64/BladePerseusDarkB.png/revision/latest"
     },
     "Steel Samurai": {
       "attack": 7,
@@ -191,7 +191,7 @@
       "stamina": 6,
       "weight": 8,
       "type": "Balance",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/2/2c/BladeSteelSamurai.png/revision/latest"
     },
     "Horn Rhino": {
       "attack": 5,
@@ -199,7 +199,7 @@
       "stamina": 6,
       "weight": 8,
       "type": "Defense",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/4/41/BladeRhinoHorn.png/revision/latest"
     },
     "Rhino Horn": {
       "attack": 5,
@@ -207,7 +207,7 @@
       "stamina": 6,
       "weight": 8,
       "type": "Defense",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/4/41/BladeRhinoHorn.png/revision/latest"
     },
     "Keel Shark": {
       "attack": 8,
@@ -215,7 +215,7 @@
       "stamina": 5,
       "weight": 7,
       "type": "Attack",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/c/ca/BladeSharkFour.png/revision/latest"
     },
     "Shark Keel": {
       "attack": 8,
@@ -223,7 +223,7 @@
       "stamina": 5,
       "weight": 7,
       "type": "Attack",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/c/ca/BladeSharkFour.png/revision/latest"
     },
     "Talon Ptera": {
       "attack": 6,
@@ -231,7 +231,7 @@
       "stamina": 7,
       "weight": 6,
       "type": "Stamina",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/3/3a/BladePteraSwing.png/revision/latest"
     },
     "Ptera Talon": {
       "attack": 6,
@@ -239,7 +239,7 @@
       "stamina": 7,
       "weight": 6,
       "type": "Stamina",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/3/3a/BladePteraSwing.png/revision/latest"
     },
     "Sting Unicorn": {
       "attack": 6,
@@ -247,7 +247,7 @@
       "stamina": 7,
       "weight": 7,
       "type": "Balance",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/1/15/BladeUnicornSting.png/revision/latest"
     },
     "Unicorn Sting": {
       "attack": 6,
@@ -255,7 +255,7 @@
       "stamina": 7,
       "weight": 7,
       "type": "Balance",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/1/15/BladeUnicornSting.png/revision/latest"
     },
     "Roar Tyranno": {
       "attack": 8,
@@ -263,7 +263,7 @@
       "stamina": 5,
       "weight": 8,
       "type": "Attack",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/6/6d/BladeTyrannoRoar.png/revision/latest"
     },
     "Tyranno Roar": {
       "attack": 8,
@@ -271,7 +271,7 @@
       "stamina": 5,
       "weight": 8,
       "type": "Attack",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/6/6d/BladeTyrannoRoar.png/revision/latest"
     },
     "Savage Bear": {
       "attack": 7,
@@ -295,7 +295,7 @@
       "stamina": 7,
       "weight": 7,
       "type": "Defense",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/3/31/BladeSphinxCowl.png/revision/latest"
     },
     "Sphinx Cowl": {
       "attack": 5,
@@ -303,7 +303,7 @@
       "stamina": 7,
       "weight": 7,
       "type": "Defense",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/3/31/BladeSphinxCowl.png/revision/latest"
     },
     "Obsidian Shell": {
       "attack": 4,
@@ -311,7 +311,7 @@
       "stamina": 6,
       "weight": 8,
       "type": "Defense",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/3/3c/BladeBlackShell.png/revision/latest"
     },
     "Shell Obsidian": {
       "attack": 4,
@@ -319,7 +319,7 @@
       "stamina": 6,
       "weight": 8,
       "type": "Defense",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/3/3c/BladeBlackShell.png/revision/latest"
     },
     "Tide Whale": {
       "attack": 5,
@@ -327,7 +327,7 @@
       "stamina": 8,
       "weight": 7,
       "type": "Stamina",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/8/89/BladeWhaleWave.png/revision/latest"
     },
     "Whale Tide": {
       "attack": 5,
@@ -335,7 +335,7 @@
       "stamina": 8,
       "weight": 7,
       "type": "Stamina",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/8/89/BladeWhaleWave.png/revision/latest"
     },
     "Dagger Dran": {
       "attack": 8,
@@ -343,7 +343,7 @@
       "stamina": 5,
       "weight": 7,
       "type": "Attack",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/c/c8/BladeDranDagger.png/revision/latest"
     },
     "Dran Dagger": {
       "attack": 8,
@@ -351,7 +351,7 @@
       "stamina": 5,
       "weight": 7,
       "type": "Attack",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/c/c8/BladeDranDagger.png/revision/latest"
     },
     "Yell Kong": {
       "attack": 7,
@@ -375,7 +375,7 @@
       "stamina": 7,
       "weight": 7,
       "type": "Balance",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/9/96/BladePhoenixFeather.png/revision/latest"
     },
     "Phoenix Soar": {
       "attack": 7,
@@ -383,7 +383,7 @@
       "stamina": 7,
       "weight": 7,
       "type": "Balance",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/9/96/BladePhoenixFeather.png/revision/latest"
     },
     "Chain Incendio": {
       "attack": 7,
@@ -391,7 +391,7 @@
       "stamina": 6,
       "weight": 7,
       "type": "Balance",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/8/83/BladeHellsChain.png/revision/latest"
     },
     "Hells Chain": {
       "attack": 7,
@@ -407,7 +407,7 @@
       "stamina": 6,
       "weight": 6,
       "type": "Attack",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/9/9d/BladeViperTail.png/revision/latest"
     },
     "Viper Tail": {
       "attack": 7,
@@ -415,7 +415,7 @@
       "stamina": 6,
       "weight": 6,
       "type": "Attack",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/9/9d/BladeViperTail.png/revision/latest"
     },
     "Bite Croc": {
       "attack": 8,
@@ -423,7 +423,7 @@
       "stamina": 5,
       "weight": 7,
       "type": "Attack",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/8/86/BladeCrocCrunch.png/revision/latest"
     },
     "Croc Bite": {
       "attack": 8,
@@ -431,7 +431,7 @@
       "stamina": 5,
       "weight": 7,
       "type": "Attack",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/8/86/BladeCrocCrunch.png/revision/latest"
     },
     "Gale Wyvern": {
       "attack": 6,
@@ -439,7 +439,7 @@
       "stamina": 7,
       "weight": 6,
       "type": "Stamina",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/3/3d/BladeWyvernGale.png/revision/latest"
     },
     "Wyvern Gale": {
       "attack": 6,
@@ -447,7 +447,7 @@
       "stamina": 7,
       "weight": 6,
       "type": "Stamina",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/3/3d/BladeWyvernGale.png/revision/latest"
     },
     "Beat Tyranno": {
       "attack": 8,
@@ -455,7 +455,7 @@
       "stamina": 5,
       "weight": 8,
       "type": "Attack",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/f/ff/BladeTyrannoBeat.png/revision/latest"
     },
     "Tyranno Beat": {
       "attack": 8,
@@ -463,7 +463,7 @@
       "stamina": 5,
       "weight": 8,
       "type": "Attack",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/f/ff/BladeTyrannoBeat.png/revision/latest"
     },
     "Crest Leon": {
       "attack": 8,
@@ -471,7 +471,7 @@
       "stamina": 5,
       "weight": 7,
       "type": "Attack",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/c/c7/BladeLeonCrest.png/revision/latest"
     },
     "Pearl Tiger": {
       "attack": 7,
@@ -479,7 +479,7 @@
       "stamina": 6,
       "weight": 7,
       "type": "Attack",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/3/37/BladeWeissTiger.png/revision/latest"
     },
     "Tiger Pearl": {
       "attack": 7,
@@ -487,7 +487,7 @@
       "stamina": 6,
       "weight": 7,
       "type": "Attack",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/3/37/BladeWeissTiger.png/revision/latest"
     },
     "Gill Shark": {
       "attack": 8,
@@ -495,7 +495,7 @@
       "stamina": 5,
       "weight": 7,
       "type": "Attack",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/7/78/BladeGillShark.png/revision/latest"
     },
     "Shark Gill": {
       "attack": 8,
@@ -503,7 +503,7 @@
       "stamina": 5,
       "weight": 7,
       "type": "Attack",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/7/7c/BladeSharkGill.png/revision/latest"
     },
     "Hells Scythe": {
       "attack": 6,
@@ -551,7 +551,7 @@
       "stamina": 7,
       "weight": 9,
       "type": "Balance",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/2/2f/BladeCobaltDrake.png/revision/latest"
     },
     "Aero Pegasus": {
       "attack": 7,
@@ -559,7 +559,7 @@
       "stamina": 7,
       "weight": 7,
       "type": "Balance",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/5/58/BladeAeroPegasus.png/revision/latest"
     }
   },
   "ratchets": {
@@ -569,7 +569,7 @@
       "stamina": 7,
       "weight": 4,
       "burst_resistance": 8,
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/3/3a/Ratchet1-60.png/revision/latest"
     },
     "1-70": {
       "attack": 5,
@@ -577,7 +577,7 @@
       "stamina": 7,
       "weight": 5,
       "burst_resistance": 7,
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/f/f1/Ratchet1-70.png/revision/latest"
     },
     "1-80": {
       "attack": 4,
@@ -585,7 +585,7 @@
       "stamina": 6,
       "weight": 6,
       "burst_resistance": 7,
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/4/46/Ratchet1-80.png/revision/latest"
     },
     "2-60": {
       "attack": 6,
@@ -593,7 +593,7 @@
       "stamina": 7,
       "weight": 4,
       "burst_resistance": 7,
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/a/a6/Ratchet2-60.png/revision/latest"
     },
     "2-80": {
       "attack": 5,
@@ -601,7 +601,7 @@
       "stamina": 6,
       "weight": 6,
       "burst_resistance": 7,
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/d/dc/Ratchet2-80.png/revision/latest"
     },
     "3-60": {
       "attack": 7,
@@ -617,7 +617,7 @@
       "stamina": 6,
       "weight": 5,
       "burst_resistance": 7,
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/d/da/Ratchet3-70.png/revision/latest"
     },
     "3-80": {
       "attack": 5,
@@ -641,7 +641,7 @@
       "stamina": 6,
       "weight": 6,
       "burst_resistance": 6,
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/1/16/Ratchet4-70.png/revision/latest"
     },
     "4-80": {
       "attack": 6,
@@ -665,7 +665,7 @@
       "stamina": 7,
       "weight": 6,
       "burst_resistance": 7,
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/c/cc/Ratchet5-70.png/revision/latest"
     },
     "5-80": {
       "attack": 5,
@@ -673,7 +673,7 @@
       "stamina": 6,
       "weight": 7,
       "burst_resistance": 7,
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/4/42/Ratchet5-80.png/revision/latest"
     },
     "6-60": {
       "attack": 6,
@@ -681,7 +681,7 @@
       "stamina": 7,
       "weight": 5,
       "burst_resistance": 7,
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/5/53/Ratchet6-60.png/revision/latest"
     },
     "6-70": {
       "attack": 5,
@@ -689,7 +689,7 @@
       "stamina": 6,
       "weight": 6,
       "burst_resistance": 7,
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/1/14/Ratchet6-70.png/revision/latest"
     },
     "6-80": {
       "attack": 5,
@@ -697,7 +697,7 @@
       "stamina": 6,
       "weight": 7,
       "burst_resistance": 7,
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/9/98/Ratchet6-80.png/revision/latest"
     },
     "7-70": {
       "attack": 5,
@@ -705,7 +705,7 @@
       "stamina": 7,
       "weight": 6,
       "burst_resistance": 7,
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/3/38/Ratchet7-70.png/revision/latest"
     },
     "7-80": {
       "attack": 5,
@@ -713,7 +713,7 @@
       "stamina": 7,
       "weight": 7,
       "burst_resistance": 7,
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/d/d7/Ratchet7-80.png/revision/latest"
     },
     "9-60": {
       "attack": 5,
@@ -729,7 +729,7 @@
       "stamina": 7,
       "weight": 7,
       "burst_resistance": 8,
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/6/61/Ratchet9-80.png/revision/latest"
     },
     "M-85": {
       "attack": 4,
@@ -737,7 +737,7 @@
       "stamina": 6,
       "weight": 9,
       "burst_resistance": 7,
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/7/79/RatchetM-85.png/revision/latest"
     },
     "4-55": {
       "attack": 7,
@@ -745,7 +745,7 @@
       "stamina": 6,
       "weight": 4,
       "burst_resistance": 6,
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/7/7a/Ratchet4-55.png/revision/latest"
     }
   },
   "bits": {
@@ -837,7 +837,7 @@
       "weight": 4,
       "burst_resistance": 5,
       "type": "Stamina",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/7/7d/BitSpike.png/revision/latest"
     },
     "Gear Flat (GF)": {
       "attack": 9,
@@ -855,7 +855,7 @@
       "weight": 6,
       "burst_resistance": 5,
       "type": "Stamina",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/9/97/BitGearBall.png/revision/latest"
     },
     "Gear Needle (GN)": {
       "attack": 3,
@@ -864,7 +864,7 @@
       "weight": 6,
       "burst_resistance": 5,
       "type": "Stamina",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/9/9d/BitGearNeedle.png/revision/latest"
     },
     "Gear Point (GP)": {
       "attack": 7,
@@ -873,7 +873,7 @@
       "weight": 5,
       "burst_resistance": 6,
       "type": "Attack",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/3/36/BitGearPoint.png/revision/latest"
     },
     "High Taper (HT)": {
       "attack": 5,
@@ -882,7 +882,7 @@
       "weight": 4,
       "burst_resistance": 5,
       "type": "Balance",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/b/b5/BitHighTaper.png/revision/latest"
     },
     "Elevate (E)": {
       "attack": 4,
@@ -891,7 +891,7 @@
       "weight": 5,
       "burst_resistance": 5,
       "type": "Stamina",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/3/38/BitElevate.png/revision/latest"
     },
     "Unite (U)": {
       "attack": 6,
@@ -900,7 +900,7 @@
       "weight": 5,
       "burst_resistance": 6,
       "type": "Balance",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/a/a0/BitUnite.png/revision/latest"
     },
     "Quake (Q)": {
       "attack": 7,
@@ -909,7 +909,7 @@
       "weight": 5,
       "burst_resistance": 6,
       "type": "Attack",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/e/ed/BitQuake.png/revision/latest"
     },
     "Cyclone (C)": {
       "attack": 5,
@@ -918,7 +918,7 @@
       "weight": 5,
       "burst_resistance": 5,
       "type": "Balance",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/f/fb/BitCyclone.png/revision/latest"
     },
     "Dot (D)": {
       "attack": 3,
@@ -927,7 +927,7 @@
       "weight": 5,
       "burst_resistance": 5,
       "type": "Defense",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/b/b2/BitDot.png/revision/latest"
     },
     "Disk Ball (DB)": {
       "attack": 3,
@@ -936,7 +936,7 @@
       "weight": 6,
       "burst_resistance": 5,
       "type": "Stamina",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/1/10/BitDiskBall.png/revision/latest"
     },
     "Accel (A)": {
       "attack": 8,
@@ -945,7 +945,7 @@
       "weight": 4,
       "burst_resistance": 7,
       "type": "Attack",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/8/8e/BitAccel.png/revision/latest"
     },
     "Metal Needle (MN)": {
       "attack": 3,
@@ -954,7 +954,7 @@
       "weight": 7,
       "burst_resistance": 5,
       "type": "Defense",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/4/47/BitMetalNeedle.png/revision/latest"
     },
     "Trans Point (TP)": {
       "attack": 7,
@@ -963,7 +963,7 @@
       "weight": 5,
       "burst_resistance": 6,
       "type": "Balance",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/d/d0/BitTransPoint.png/revision/latest"
     },
     "Free Ball (FB)": {
       "attack": 3,
@@ -972,7 +972,7 @@
       "weight": 5,
       "burst_resistance": 5,
       "type": "Stamina",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/7/78/BitFreeBall.png/revision/latest"
     },
     "Hexa (H)": {
       "attack": 5,
@@ -981,7 +981,7 @@
       "weight": 5,
       "burst_resistance": 6,
       "type": "Balance",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/8/8c/BitHexa.png/revision/latest"
     },
     "Glide (G)": {
       "attack": 4,
@@ -990,7 +990,7 @@
       "weight": 5,
       "burst_resistance": 5,
       "type": "Stamina",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/d/d5/BitGlide.png/revision/latest"
     },
     "Low Orb (LO)": {
       "attack": 3,
@@ -999,7 +999,7 @@
       "weight": 5,
       "burst_resistance": 5,
       "type": "Stamina",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/f/f4/BitLowOrb.png/revision/latest"
     },
     "Vortex (V)": {
       "attack": 6,
@@ -1008,7 +1008,7 @@
       "weight": 5,
       "burst_resistance": 6,
       "type": "Balance",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/f/f9/BitVortex.png/revision/latest"
     },
     "Kick (K)": {
       "attack": 8,
@@ -1017,7 +1017,7 @@
       "weight": 4,
       "burst_resistance": 7,
       "type": "Attack",
-      "image_url": null
+      "image_url": "https://static.wikia.nocookie.net/beyblade/images/4/47/BitKick.png/revision/latest"
     },
     "Wave (W)": {
       "attack": 5,
