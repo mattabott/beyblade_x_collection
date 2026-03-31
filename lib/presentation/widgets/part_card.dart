@@ -88,8 +88,7 @@ class PartCard extends StatelessWidget {
           );
         },
         errorBuilder: (context, error, stackTrace) {
-          debugPrint('IMAGE ERROR for $name: $error');
-          debugPrint('URL was: ${stats.imageUrl}');
+          // Error loading image - show fallback icon
           return Container(
             width: 56, height: 56,
             decoration: BoxDecoration(color: Colors.red.withValues(alpha: 0.3), borderRadius: BorderRadius.circular(8)),
