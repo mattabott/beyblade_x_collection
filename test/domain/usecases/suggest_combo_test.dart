@@ -57,5 +57,28 @@ void main() {
       );
       expect(results, isEmpty);
     });
+
+    test('returns combos with different blades for variety', () {
+      final results = suggestCombo.execute(
+        db: db, strategy: 'attack',
+        availableBlades: ['Attacker', 'Defender', 'Spinner'],
+        availableRatchets: ['3-60', '9-60'],
+        availableBits: ['Flat (F)', 'Ball (B)'],
+      );
+      final blades = results.map((r) => r.blade).toSet();
+      expect(blades.length, results.length, reason: 'Each result should use a different blade');
+    });
+
+    test('shuffle mode produces results', () {
+      final results = suggestCombo.execute(
+        db: db, strategy: 'attack',
+        availableBlades: ['Attacker', 'Defender', 'Spinner'],
+        availableRatchets: ['3-60', '9-60'],
+        availableBits: ['Flat (F)', 'Ball (B)'],
+        shuffle: true,
+      );
+      expect(results.isNotEmpty, isTrue);
+      expect(results.length, lessThanOrEqualTo(3));
+    });
   });
 }

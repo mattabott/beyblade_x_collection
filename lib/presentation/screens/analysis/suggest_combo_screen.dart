@@ -72,9 +72,32 @@ class _SuggestComboScreenState extends ConsumerState<SuggestComboScreen> {
                   label: const Text('Suggerisci'),
                   style: ElevatedButton.styleFrom(backgroundColor: BeybladeTheme.accent, foregroundColor: BeybladeTheme.background, minimumSize: const Size.fromHeight(50)),
                 ),
+                if (_results.isNotEmpty) ...[
+                  const SizedBox(height: 12),
+                  OutlinedButton.icon(
+                    onPressed: () {
+                      List<String> blades, ratchets, bits;
+                      if (_onlyOwned) {
+                        blades = collection.parts.where((p) => p.category == PartCategory.blade).map((p) => p.name).toList();
+                        ratchets = collection.parts.where((p) => p.category == PartCategory.ratchet).map((p) => p.name).toList();
+                        bits = collection.parts.where((p) => p.category == PartCategory.bit).map((p) => p.name).toList();
+                      } else {
+                        blades = db.blades.keys.toList();
+                        ratchets = db.ratchets.keys.toList();
+                        bits = db.bits.keys.toList();
+                      }
+                      setState(() {
+                        _results = suggestComboUC.execute(db: db, strategy: _strategy, availableBlades: blades, availableRatchets: ratchets, availableBits: bits, shuffle: true);
+                      });
+                    },
+                    icon: const Icon(Icons.shuffle, size: 18),
+                    label: const Text('Rigenera'),
+                    style: OutlinedButton.styleFrom(foregroundColor: BeybladeTheme.textSecondary, side: const BorderSide(color: BeybladeTheme.textSecondary), minimumSize: const Size.fromHeight(42)),
+                  ),
+                ],
                 const SizedBox(height: 24),
                 if (_results.isEmpty)
-                  const Center(child: Text('Tocca "Suggerisci" per vedere le migliori combo', style: TextStyle(color: BeybladeTheme.textSecondary))),
+                  Center(child: Text('Tocca "Suggerisci" per vedere le migliori combo', style: TextStyle(color: BeybladeTheme.textSecondary))),
                 ..._results.asMap().entries.map((entry) {
                   final i = entry.key;
                   final combo = entry.value;
