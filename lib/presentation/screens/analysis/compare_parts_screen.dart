@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
 import 'package:beyblade_x_collection/core/theme/beyblade_theme.dart';
 import 'package:beyblade_x_collection/core/utils/stat_utils.dart';
 import 'package:beyblade_x_collection/data/models/collected_part.dart';
@@ -25,7 +24,6 @@ class _ComparePartsScreenState extends ConsumerState<ComparePartsScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Confronta Parti'),
-        leading: IconButton(icon: const Icon(Icons.arrow_back), onPressed: () => context.go('/analysis')),
       ),
       body: dbAsync.when(
         data: (db) {

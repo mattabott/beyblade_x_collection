@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
 import 'package:beyblade_x_collection/core/theme/beyblade_theme.dart';
 import 'package:beyblade_x_collection/data/models/collected_part.dart';
 import 'package:beyblade_x_collection/data/models/part_stats.dart';
@@ -26,10 +25,6 @@ class _AddPartScreenState extends ConsumerState<AddPartScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Aggiungi Parti'),
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back),
-          onPressed: () => context.go('/collection'),
-        ),
       ),
       body: Column(
         children: [

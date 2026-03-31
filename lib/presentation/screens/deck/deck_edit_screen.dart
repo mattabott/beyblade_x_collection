@@ -35,10 +35,6 @@ class _DeckEditScreenState extends ConsumerState<DeckEditScreen> {
           loading: () => const Text('...'),
           error: (_, __) => const Text('Errore'),
         ),
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back),
-          onPressed: () => context.go('/deck'),
-        ),
         actions: [
           IconButton(
             icon: const Icon(Icons.delete, color: BeybladeTheme.secondary),
@@ -235,7 +231,7 @@ class _DeckEditScreenState extends ConsumerState<DeckEditScreen> {
             onPressed: () {
               ref.read(collectionProvider.notifier).deleteDeck(widget.deckIndex);
               Navigator.pop(ctx);
-              context.go('/deck');
+              context.pop();
             },
             child: const Text('Elimina'),
           ),

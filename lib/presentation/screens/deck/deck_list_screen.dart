@@ -14,10 +14,6 @@ class DeckListScreen extends ConsumerWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Gestione Deck'),
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back),
-          onPressed: () => context.go('/'),
-        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () => _showCreateDeckDialog(context, ref),
@@ -48,7 +44,7 @@ class DeckListScreen extends ConsumerWidget {
             itemCount: collection.decks.length,
             itemBuilder: (context, index) => DeckPreview(
               deck: collection.decks[index],
-              onTap: () => context.go('/deck/edit/$index'),
+              onTap: () => context.push('/deck/edit/$index'),
             ),
           );
         },

@@ -10,17 +10,16 @@ class AnalysisMenuScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Analisi'),
-        leading: IconButton(icon: const Icon(Icons.arrow_back), onPressed: () => context.go('/')),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
           children: [
-            _AnalysisTile(icon: Icons.compare_arrows, title: 'Confronta Parti', subtitle: 'Confronta stats di 2 o piu parti con radar chart', color: BeybladeTheme.secondary, onTap: () => context.go('/analysis/compare')),
+            _AnalysisTile(icon: Icons.compare_arrows, title: 'Confronta Parti', subtitle: 'Confronta stats di 2 o piu parti con radar chart', color: BeybladeTheme.secondary, onTap: () => context.push('/analysis/compare')),
             const SizedBox(height: 12),
-            _AnalysisTile(icon: Icons.leaderboard, title: 'Classifica Parti', subtitle: 'Ordina le parti per statistica', color: const Color(0xFF2ECC71), onTap: () => context.go('/analysis/rank')),
+            _AnalysisTile(icon: Icons.leaderboard, title: 'Classifica Parti', subtitle: 'Ordina le parti per statistica', color: const Color(0xFF2ECC71), onTap: () => context.push('/analysis/rank')),
             const SizedBox(height: 12),
-            _AnalysisTile(icon: Icons.auto_awesome, title: 'Suggerisci Combo', subtitle: 'Trova le migliori combinazioni per strategia', color: BeybladeTheme.accent, onTap: () => context.go('/analysis/suggest')),
+            _AnalysisTile(icon: Icons.auto_awesome, title: 'Suggerisci Combo', subtitle: 'Trova le migliori combinazioni per strategia', color: BeybladeTheme.accent, onTap: () => context.push('/analysis/suggest')),
           ],
         ),
       ),

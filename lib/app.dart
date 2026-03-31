@@ -14,29 +14,45 @@ import 'package:beyblade_x_collection/presentation/screens/wishlist/wishlist_scr
 import 'package:beyblade_x_collection/presentation/screens/settings/settings_screen.dart';
 
 final GoRouter router = GoRouter(
+  initialLocation: '/',
   routes: [
-    GoRoute(path: '/', builder: (_, __) => const HomeScreen()),
-    GoRoute(path: '/collection', builder: (_, __) => const CollectionScreen()),
-    GoRoute(path: '/collection/add', builder: (_, __) => const AddPartScreen()),
-    GoRoute(path: '/deck', builder: (_, __) => const DeckListScreen()),
     GoRoute(
-      path: '/deck/edit/:index',
-      builder: (_, state) {
-        final index = int.parse(state.pathParameters['index']!);
-        return DeckEditScreen(deckIndex: index);
-      },
+      path: '/',
+      builder: (_, __) => const HomeScreen(),
+      routes: [
+        GoRoute(
+          path: 'collection',
+          builder: (_, __) => const CollectionScreen(),
+          routes: [
+            GoRoute(path: 'add', builder: (_, __) => const AddPartScreen()),
+          ],
+        ),
+        GoRoute(
+          path: 'deck',
+          builder: (_, __) => const DeckListScreen(),
+          routes: [
+            GoRoute(
+              path: 'edit/:index',
+              builder: (_, state) {
+                final index = int.parse(state.pathParameters['index']!);
+                return DeckEditScreen(deckIndex: index);
+              },
+            ),
+          ],
+        ),
+        GoRoute(
+          path: 'analysis',
+          builder: (_, __) => const AnalysisMenuScreen(),
+          routes: [
+            GoRoute(path: 'compare', builder: (_, __) => const ComparePartsScreen()),
+            GoRoute(path: 'rank', builder: (_, __) => const RankPartsScreen()),
+            GoRoute(path: 'suggest', builder: (_, __) => const SuggestComboScreen()),
+          ],
+        ),
+        GoRoute(path: 'wishlist', builder: (_, __) => const WishlistScreen()),
+        GoRoute(path: 'settings', builder: (_, __) => const SettingsScreen()),
+      ],
     ),
-    GoRoute(path: '/analysis', builder: (_, __) => const AnalysisMenuScreen()),
-    GoRoute(
-        path: '/analysis/compare',
-        builder: (_, __) => const ComparePartsScreen()),
-    GoRoute(
-        path: '/analysis/rank', builder: (_, __) => const RankPartsScreen()),
-    GoRoute(
-        path: '/analysis/suggest',
-        builder: (_, __) => const SuggestComboScreen()),
-    GoRoute(path: '/wishlist', builder: (_, __) => const WishlistScreen()),
-    GoRoute(path: '/settings', builder: (_, __) => const SettingsScreen()),
   ],
 );
 

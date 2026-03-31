@@ -42,10 +42,6 @@ class _CollectionScreenState extends ConsumerState<CollectionScreen>
     return Scaffold(
       appBar: AppBar(
         title: const Text('La Mia Collezione'),
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back),
-          onPressed: () => context.go('/'),
-        ),
         bottom: TabBar(
           controller: _tabController,
           tabs: const [
@@ -56,7 +52,7 @@ class _CollectionScreenState extends ConsumerState<CollectionScreen>
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () => context.go('/collection/add'),
+        onPressed: () => context.push('/collection/add'),
         child: const Icon(Icons.add),
       ),
       body: Column(
