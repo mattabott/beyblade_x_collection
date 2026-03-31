@@ -80,11 +80,14 @@ class _RankPartsScreenState extends ConsumerState<RankPartsScreen> {
                     return Card(
                       margin: const EdgeInsets.only(bottom: 4),
                       child: Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+                        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                         child: Row(children: [
-                          SizedBox(width: 32, child: Text('#${index + 1}', style: TextStyle(fontWeight: FontWeight.bold, color: index < 3 ? BeybladeTheme.accent : BeybladeTheme.textSecondary, fontFamily: 'monospace'))),
+                          SizedBox(width: 28, child: Text('#${index + 1}', style: TextStyle(fontWeight: FontWeight.bold, color: index < 3 ? BeybladeTheme.accent : BeybladeTheme.textSecondary, fontFamily: 'monospace'))),
+                          const SizedBox(width: 4),
+                          _partThumbnail(item.stats, 36),
+                          const SizedBox(width: 10),
                           Expanded(child: Text(item.name, style: const TextStyle(fontWeight: FontWeight.w600))),
-                          SizedBox(width: 120, child: StatBar(label: '', value: item.value, color: StatUtils.colorForStat(_stat))),
+                          SizedBox(width: 100, child: StatBar(label: '', value: item.value, color: StatUtils.colorForStat(_stat))),
                         ]),
                       ),
                     );
@@ -96,6 +99,30 @@ class _RankPartsScreenState extends ConsumerState<RankPartsScreen> {
         },
         loading: () => const Center(child: CircularProgressIndicator()),
         error: (_, __) => const Center(child: Text('Errore')),
+      ),
+    );
+  }
+
+  Widget _partThumbnail(PartStats stats, double size) {
+    final url = stats.imageUrl;
+    if (url == null || url.isEmpty) {
+      final color = StatUtils.colorForType(stats.type);
+      return Container(
+        width: size, height: size,
+        decoration: BoxDecoration(color: color.withValues(alpha: 0.2), borderRadius: BorderRadius.circular(6)),
+        child: Icon(Icons.catching_pokemon, color: color, size: size * 0.6),
+      );
+    }
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(6),
+      child: Image.network(
+        url, width: size, height: size, fit: BoxFit.contain,
+        headers: const {'User-Agent': 'Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36'},
+        errorBuilder: (_, __, ___) => Container(
+          width: size, height: size,
+          color: Colors.grey.withValues(alpha: 0.2),
+          child: Icon(Icons.catching_pokemon, size: size * 0.6),
+        ),
       ),
     );
   }
